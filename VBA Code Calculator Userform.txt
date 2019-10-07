@@ -1,0 +1,3125 @@
+'Module VBA CODE********************************************************************************************
+
+Sub RoundedRectangle2_Click()
+
+
+
+
+
+UserForm1.cbUOM1.Value = Sheet1.Range("B5").Value
+UserForm1.cbCurrency1.Value = Sheet1.Range("C5").Value
+UserForm1.cbFxRate1.Value = Sheet3.Range("E4").Value
+UserForm1.cbUOMCHF1.Value = Sheet3.Range("B5").Value
+
+UserForm1.cbRegion1C.Value = Sheet1.Range("B7").Value
+UserForm1.cbRegion2C.Value = Sheet1.Range("B8").Value
+UserForm1.cbRegion3C.Value = Sheet1.Range("B9").Value
+UserForm1.cbRegion4C.Value = Sheet1.Range("B10").Value
+UserForm1.cbRegion5C.Value = Sheet1.Range("B11").Value
+UserForm1.cbRegion6C.Value = Sheet1.Range("B12").Value
+UserForm1.cbRegion7C.Value = Sheet1.Range("B13").Value
+UserForm1.cbRegion8C.Value = Sheet1.Range("B14").Value
+UserForm1.cbRegion9C.Value = Sheet1.Range("B15").Value
+UserForm1.cbRegion10C.Value = Sheet1.Range("B16").Value
+
+UserForm1.tbRegion1P.Value = Sheet1.Range("B21").Value
+UserForm1.tbRegion2P.Value = Sheet1.Range("B22").Value
+UserForm1.tbRegion3P.Value = Sheet1.Range("B23").Value
+UserForm1.tbRegion4P.Value = Sheet1.Range("B24").Value
+UserForm1.tbRegion5P.Value = Sheet1.Range("B25").Value
+UserForm1.tbRegion6P.Value = Sheet1.Range("B26").Value
+UserForm1.tbRegion7P.Value = Sheet1.Range("B27").Value
+UserForm1.tbRegion8P.Value = Sheet1.Range("B28").Value
+UserForm1.tbRegion9P.Value = Sheet1.Range("B29").Value
+UserForm1.tbRegion10P.Value = Sheet1.Range("B30").Value
+
+UserForm1.tbMaterial1C.Value = Sheet1.Range("C7").Value
+UserForm1.tbMaterial2C.Value = Sheet1.Range("C8").Value
+UserForm1.tbMaterial3C.Value = Sheet1.Range("C9").Value
+UserForm1.tbMaterial4C.Value = Sheet1.Range("C10").Value
+UserForm1.tbMaterial5C.Value = Sheet1.Range("C11").Value
+UserForm1.tbMaterial6C.Value = Sheet1.Range("C12").Value
+UserForm1.tbMaterial7C.Value = Sheet1.Range("C13").Value
+UserForm1.tbMaterial8C.Value = Sheet1.Range("C14").Value
+UserForm1.tbMaterial9C.Value = Sheet1.Range("C15").Value
+UserForm1.tbMaterial10C.Value = Sheet1.Range("C16").Value
+
+UserForm1.tbMaterial1P.Value = Sheet1.Range("C21").Value
+UserForm1.tbMaterial2P.Value = Sheet1.Range("C22").Value
+UserForm1.tbMaterial3P.Value = Sheet1.Range("C23").Value
+UserForm1.tbMaterial4P.Value = Sheet1.Range("C24").Value
+UserForm1.tbMaterial5P.Value = Sheet1.Range("C25").Value
+UserForm1.tbMaterial6P.Value = Sheet1.Range("C26").Value
+UserForm1.tbMaterial7P.Value = Sheet1.Range("C27").Value
+UserForm1.tbMaterial8P.Value = Sheet1.Range("C28").Value
+UserForm1.tbMaterial9P.Value = Sheet1.Range("C29").Value
+UserForm1.tbMaterial10P.Value = Sheet1.Range("C30").Value
+
+
+UserForm1.cbProdDesc1C.Value = Sheet1.Range("D7").Value
+UserForm1.cbProdDesc2C.Value = Sheet1.Range("D8").Value
+UserForm1.cbProdDesc3C.Value = Sheet1.Range("D9").Value
+UserForm1.cbProdDesc4C.Value = Sheet1.Range("D10").Value
+UserForm1.cbProdDesc5C.Value = Sheet1.Range("D11").Value
+UserForm1.cbProdDesc6C.Value = Sheet1.Range("D12").Value
+UserForm1.cbProdDesc7C.Value = Sheet1.Range("D13").Value
+UserForm1.cbProdDesc8C.Value = Sheet1.Range("D14").Value
+UserForm1.cbProdDesc9C.Value = Sheet1.Range("D15").Value
+UserForm1.cbProdDesc10C.Value = Sheet1.Range("D16").Value
+
+UserForm1.tbProdDesc1P.Value = Sheet1.Range("D21").Value
+UserForm1.tbProdDesc2P.Value = Sheet1.Range("D22").Value
+UserForm1.tbProdDesc3P.Value = Sheet1.Range("D23").Value
+UserForm1.tbProdDesc4P.Value = Sheet1.Range("D24").Value
+UserForm1.tbProdDesc5P.Value = Sheet1.Range("D25").Value
+UserForm1.tbProdDesc6P.Value = Sheet1.Range("D26").Value
+UserForm1.tbProdDesc7P.Value = Sheet1.Range("D27").Value
+UserForm1.tbProdDesc8P.Value = Sheet1.Range("D28").Value
+UserForm1.tbProdDesc9P.Value = Sheet1.Range("D29").Value
+UserForm1.tbProdDesc10P.Value = Sheet1.Range("D30").Value
+
+UserForm1.cbIncoterm1C.Value = Sheet1.Range("E7").Value
+UserForm1.cbIncoterm2C.Value = Sheet1.Range("E8").Value
+UserForm1.cbIncoterm3C.Value = Sheet1.Range("E9").Value
+UserForm1.cbIncoterm4C.Value = Sheet1.Range("E10").Value
+UserForm1.cbIncoterm5C.Value = Sheet1.Range("E11").Value
+UserForm1.cbIncoterm6C.Value = Sheet1.Range("E12").Value
+UserForm1.cbIncoterm7C.Value = Sheet1.Range("E13").Value
+UserForm1.cbIncoterm8C.Value = Sheet1.Range("E14").Value
+UserForm1.cbIncoterm9C.Value = Sheet1.Range("E15").Value
+UserForm1.cbIncoterm10C.Value = Sheet1.Range("E16").Value
+
+UserForm1.tbIncoterm1P.Value = Sheet1.Range("E21").Value
+UserForm1.tbIncoterm2P.Value = Sheet1.Range("E22").Value
+UserForm1.tbIncoterm3P.Value = Sheet1.Range("E23").Value
+UserForm1.tbIncoterm4P.Value = Sheet1.Range("E24").Value
+UserForm1.tbIncoterm5P.Value = Sheet1.Range("E25").Value
+UserForm1.tbIncoterm6P.Value = Sheet1.Range("E26").Value
+UserForm1.tbIncoterm7P.Value = Sheet1.Range("E27").Value
+UserForm1.tbIncoterm8P.Value = Sheet1.Range("E28").Value
+UserForm1.tbIncoterm9P.Value = Sheet1.Range("E29").Value
+UserForm1.tbIncoterm10P.Value = Sheet1.Range("E30").Value
+
+UserForm1.tbLocation1C.Value = Sheet1.Range("F7").Value
+UserForm1.tbLocation2C.Value = Sheet1.Range("F8").Value
+UserForm1.tbLocation3C.Value = Sheet1.Range("F9").Value
+UserForm1.tbLocation4C.Value = Sheet1.Range("F10").Value
+UserForm1.tbLocation5C.Value = Sheet1.Range("F11").Value
+UserForm1.tbLocation6C.Value = Sheet1.Range("F12").Value
+UserForm1.tbLocation7C.Value = Sheet1.Range("F13").Value
+UserForm1.tbLocation8C.Value = Sheet1.Range("F14").Value
+UserForm1.tbLocation9C.Value = Sheet1.Range("F15").Value
+UserForm1.tbLocation10C.Value = Sheet1.Range("F16").Value
+
+UserForm1.tbLocation1P.Value = Sheet1.Range("F21").Value
+UserForm1.tbLocation2P.Value = Sheet1.Range("F22").Value
+UserForm1.tbLocation3P.Value = Sheet1.Range("F23").Value
+UserForm1.tbLocation4P.Value = Sheet1.Range("F24").Value
+UserForm1.tbLocation5P.Value = Sheet1.Range("F25").Value
+UserForm1.tbLocation6P.Value = Sheet1.Range("F26").Value
+UserForm1.tbLocation7P.Value = Sheet1.Range("F27").Value
+UserForm1.tbLocation8P.Value = Sheet1.Range("F28").Value
+UserForm1.tbLocation9P.Value = Sheet1.Range("F29").Value
+UserForm1.tbLocation10P.Value = Sheet1.Range("F30").Value
+
+UserForm1.tbVolume1C.Value = Sheet1.Range("G7").Value
+UserForm1.tbVolume2C.Value = Sheet1.Range("G8").Value
+UserForm1.tbVolume3C.Value = Sheet1.Range("G9").Value
+UserForm1.tbVolume4C.Value = Sheet1.Range("G10").Value
+UserForm1.tbVolume5C.Value = Sheet1.Range("G11").Value
+UserForm1.tbVolume6C.Value = Sheet1.Range("G12").Value
+UserForm1.tbVolume7C.Value = Sheet1.Range("G13").Value
+UserForm1.tbVolume8C.Value = Sheet1.Range("G14").Value
+UserForm1.tbVolume9C.Value = Sheet1.Range("G15").Value
+UserForm1.tbVolume10C.Value = Sheet1.Range("G16").Value
+
+UserForm1.tbVolume1P.Value = Sheet1.Range("G21").Value
+UserForm1.tbVolume2P.Value = Sheet1.Range("G22").Value
+UserForm1.tbVolume3P.Value = Sheet1.Range("G23").Value
+UserForm1.tbVolume4P.Value = Sheet1.Range("G24").Value
+UserForm1.tbVolume5P.Value = Sheet1.Range("G25").Value
+UserForm1.tbVolume6P.Value = Sheet1.Range("G26").Value
+UserForm1.tbVolume7P.Value = Sheet1.Range("G27").Value
+UserForm1.tbVolume8P.Value = Sheet1.Range("G28").Value
+UserForm1.tbVolume9P.Value = Sheet1.Range("G29").Value
+UserForm1.tbVolume10P.Value = Sheet1.Range("G30").Value
+
+UserForm1.tbFCA1C.Value = Sheet1.Range("I7").Value
+UserForm1.tbFCA2C.Value = Sheet1.Range("I8").Value
+UserForm1.tbFCA3C.Value = Sheet1.Range("I9").Value
+UserForm1.tbFCA4C.Value = Sheet1.Range("I10").Value
+UserForm1.tbFCA5C.Value = Sheet1.Range("I11").Value
+UserForm1.tbFCA6C.Value = Sheet1.Range("I12").Value
+UserForm1.tbFCA7C.Value = Sheet1.Range("I13").Value
+UserForm1.tbFCA8C.Value = Sheet1.Range("I14").Value
+UserForm1.tbFCA9C.Value = Sheet1.Range("I15").Value
+UserForm1.tbFCA10C.Value = Sheet1.Range("I16").Value
+
+UserForm1.tbFCA1P.Value = Sheet1.Range("I21").Value
+UserForm1.tbFCA2P.Value = Sheet1.Range("I22").Value
+UserForm1.tbFCA3P.Value = Sheet1.Range("I23").Value
+UserForm1.tbFCA4P.Value = Sheet1.Range("I24").Value
+UserForm1.tbFCA5P.Value = Sheet1.Range("I25").Value
+UserForm1.tbFCA6P.Value = Sheet1.Range("I26").Value
+UserForm1.tbFCA7P.Value = Sheet1.Range("I27").Value
+UserForm1.tbFCA8P.Value = Sheet1.Range("I28").Value
+UserForm1.tbFCA9P.Value = Sheet1.Range("I29").Value
+UserForm1.tbFCA10P.Value = Sheet1.Range("I30").Value
+
+UserForm1.tbAdder1C.Value = Sheet1.Range("J7").Value
+UserForm1.tbAdder2C.Value = Sheet1.Range("J8").Value
+UserForm1.tbAdder3C.Value = Sheet1.Range("J9").Value
+UserForm1.tbAdder4C.Value = Sheet1.Range("J10").Value
+UserForm1.tbAdder5C.Value = Sheet1.Range("J11").Value
+UserForm1.tbAdder6C.Value = Sheet1.Range("J12").Value
+UserForm1.tbAdder7C.Value = Sheet1.Range("J13").Value
+UserForm1.tbAdder8C.Value = Sheet1.Range("J14").Value
+UserForm1.tbAdder9C.Value = Sheet1.Range("J15").Value
+UserForm1.tbAdder10C.Value = Sheet1.Range("J16").Value
+
+UserForm1.tbAdder1P.Value = Sheet1.Range("J21").Value
+UserForm1.tbAdder2P.Value = Sheet1.Range("J22").Value
+UserForm1.tbAdder3P.Value = Sheet1.Range("J23").Value
+UserForm1.tbAdder4P.Value = Sheet1.Range("J24").Value
+UserForm1.tbAdder5P.Value = Sheet1.Range("J25").Value
+UserForm1.tbAdder6P.Value = Sheet1.Range("J26").Value
+UserForm1.tbAdder7P.Value = Sheet1.Range("J27").Value
+UserForm1.tbAdder8P.Value = Sheet1.Range("J28").Value
+UserForm1.tbAdder9P.Value = Sheet1.Range("J29").Value
+UserForm1.tbAdder10P.Value = Sheet1.Range("J30").Value
+
+UserForm1.tbFrUnit1C.Value = Sheet1.Range("M7").Value
+UserForm1.tbFrUnit2C.Value = Sheet1.Range("M8").Value
+UserForm1.tbFrUnit3C.Value = Sheet1.Range("M9").Value
+UserForm1.tbFrUnit4C.Value = Sheet1.Range("M10").Value
+UserForm1.tbFrUnit5C.Value = Sheet1.Range("M11").Value
+UserForm1.tbFrUnit6C.Value = Sheet1.Range("M12").Value
+UserForm1.tbFrUnit7C.Value = Sheet1.Range("M13").Value
+UserForm1.tbFrUnit8C.Value = Sheet1.Range("M14").Value
+UserForm1.tbFrUnit9C.Value = Sheet1.Range("M15").Value
+UserForm1.tbFrUnit10C.Value = Sheet1.Range("M16").Value
+
+UserForm1.tbFrUnit1P.Value = Sheet1.Range("M21").Value
+UserForm1.tbFrUnit2P.Value = Sheet1.Range("M22").Value
+UserForm1.tbFrUnit3P.Value = Sheet1.Range("M23").Value
+UserForm1.tbFrUnit4P.Value = Sheet1.Range("M24").Value
+UserForm1.tbFrUnit5P.Value = Sheet1.Range("M25").Value
+UserForm1.tbFrUnit6P.Value = Sheet1.Range("M26").Value
+UserForm1.tbFrUnit7P.Value = Sheet1.Range("M27").Value
+UserForm1.tbFrUnit8P.Value = Sheet1.Range("M28").Value
+UserForm1.tbFrUnit9P.Value = Sheet1.Range("M29").Value
+UserForm1.tbFrUnit10P.Value = Sheet1.Range("M30").Value
+
+UserForm1.tbDuty1C.Value = Sheet1.Range("N7").Value
+UserForm1.tbDuty2C.Value = Sheet1.Range("N8").Value
+UserForm1.tbDuty3C.Value = Sheet1.Range("N9").Value
+UserForm1.tbDuty4C.Value = Sheet1.Range("N10").Value
+UserForm1.tbDuty5C.Value = Sheet1.Range("N11").Value
+UserForm1.tbDuty6C.Value = Sheet1.Range("N12").Value
+UserForm1.tbDuty7C.Value = Sheet1.Range("N13").Value
+UserForm1.tbDuty8C.Value = Sheet1.Range("N14").Value
+UserForm1.tbDuty9C.Value = Sheet1.Range("N15").Value
+UserForm1.tbDuty10C.Value = Sheet1.Range("N16").Value
+
+UserForm1.tbDuty1P.Value = Sheet1.Range("N21").Value
+UserForm1.tbDuty2P.Value = Sheet1.Range("N22").Value
+UserForm1.tbDuty3P.Value = Sheet1.Range("N23").Value
+UserForm1.tbDuty4P.Value = Sheet1.Range("N24").Value
+UserForm1.tbDuty5P.Value = Sheet1.Range("N25").Value
+UserForm1.tbDuty6P.Value = Sheet1.Range("N26").Value
+UserForm1.tbDuty7P.Value = Sheet1.Range("N27").Value
+UserForm1.tbDuty8P.Value = Sheet1.Range("N28").Value
+UserForm1.tbDuty9P.Value = Sheet1.Range("N29").Value
+UserForm1.tbDuty10P.Value = Sheet1.Range("N30").Value
+
+UserForm1.tbRebate1C.Value = Sheet1.Range("O7").Value
+UserForm1.tbRebate2C.Value = Sheet1.Range("O8").Value
+UserForm1.tbRebate3C.Value = Sheet1.Range("O9").Value
+UserForm1.tbRebate4C.Value = Sheet1.Range("O10").Value
+UserForm1.tbRebate5C.Value = Sheet1.Range("O11").Value
+UserForm1.tbRebate6C.Value = Sheet1.Range("O12").Value
+UserForm1.tbRebate7C.Value = Sheet1.Range("O13").Value
+UserForm1.tbRebate8C.Value = Sheet1.Range("O14").Value
+UserForm1.tbRebate9C.Value = Sheet1.Range("O15").Value
+UserForm1.tbRebate10C.Value = Sheet1.Range("O16").Value
+
+UserForm1.tbRebate1P.Value = Sheet1.Range("O21").Value
+UserForm1.tbRebate2P.Value = Sheet1.Range("O22").Value
+UserForm1.tbRebate3P.Value = Sheet1.Range("O23").Value
+UserForm1.tbRebate4P.Value = Sheet1.Range("O24").Value
+UserForm1.tbRebate5P.Value = Sheet1.Range("O25").Value
+UserForm1.tbRebate6P.Value = Sheet1.Range("O26").Value
+UserForm1.tbRebate7P.Value = Sheet1.Range("O27").Value
+UserForm1.tbRebate8P.Value = Sheet1.Range("O28").Value
+UserForm1.tbRebate9P.Value = Sheet1.Range("O29").Value
+UserForm1.tbRebate10P.Value = Sheet1.Range("O30").Value
+
+UserForm1.tbCost1C.Value = Sheet1.Range("R7").Value
+UserForm1.tbCost2C.Value = Sheet1.Range("R8").Value
+UserForm1.tbCost3C.Value = Sheet1.Range("R9").Value
+UserForm1.tbCost4C.Value = Sheet1.Range("R10").Value
+UserForm1.tbCost5C.Value = Sheet1.Range("R11").Value
+UserForm1.tbCost6C.Value = Sheet1.Range("R12").Value
+UserForm1.tbCost7C.Value = Sheet1.Range("R13").Value
+UserForm1.tbCost8C.Value = Sheet1.Range("R14").Value
+UserForm1.tbCost9C.Value = Sheet1.Range("R15").Value
+UserForm1.tbCost10C.Value = Sheet1.Range("R16").Value
+
+UserForm1.tbCost1P.Value = Sheet1.Range("R21").Value
+UserForm1.tbCost2P.Value = Sheet1.Range("R22").Value
+UserForm1.tbCost3P.Value = Sheet1.Range("R23").Value
+UserForm1.tbCost4P.Value = Sheet1.Range("R24").Value
+UserForm1.tbCost5P.Value = Sheet1.Range("R25").Value
+UserForm1.tbCost6P.Value = Sheet1.Range("R26").Value
+UserForm1.tbCost7P.Value = Sheet1.Range("R27").Value
+UserForm1.tbCost8P.Value = Sheet1.Range("R28").Value
+UserForm1.tbCost9P.Value = Sheet1.Range("R29").Value
+UserForm1.tbCost10P.Value = Sheet1.Range("R30").Value
+
+UserForm1.tbServices1C.Value = Sheet1.Range("W7").Value
+UserForm1.tbServices2C.Value = Sheet1.Range("W8").Value
+UserForm1.tbServices3C.Value = Sheet1.Range("W9").Value
+UserForm1.tbServices4C.Value = Sheet1.Range("W10").Value
+UserForm1.tbServices5C.Value = Sheet1.Range("W11").Value
+UserForm1.tbServices6C.Value = Sheet1.Range("W12").Value
+UserForm1.tbServices7C.Value = Sheet1.Range("W13").Value
+UserForm1.tbServices8C.Value = Sheet1.Range("W14").Value
+UserForm1.tbServices9C.Value = Sheet1.Range("W15").Value
+UserForm1.tbServices10C.Value = Sheet1.Range("W16").Value
+
+UserForm1.tbServices1P.Value = Sheet1.Range("W21").Value
+UserForm1.tbServices2P.Value = Sheet1.Range("W22").Value
+UserForm1.tbServices3P.Value = Sheet1.Range("W23").Value
+UserForm1.tbServices4P.Value = Sheet1.Range("W24").Value
+UserForm1.tbServices5P.Value = Sheet1.Range("W25").Value
+UserForm1.tbServices6P.Value = Sheet1.Range("W26").Value
+UserForm1.tbServices7P.Value = Sheet1.Range("W27").Value
+UserForm1.tbServices8P.Value = Sheet1.Range("W28").Value
+UserForm1.tbServices9P.Value = Sheet1.Range("W29").Value
+UserForm1.tbServices10P.Value = Sheet1.Range("W30").Value
+
+
+
+
+UserForm1.Show (vbModeless)
+
+
+End Sub
+
+
+
+
+
+
+'MAIN USERFORM VBA CODE**********************************************************************************
+
+'Load values into Excel Sheet*******************************************************************************
+Private Sub cbCalculatePC2A_Click()
+
+Sheet1.Range("B5").Value = cbUOM1.Text
+Sheet1.Range("C5").Value = cbCurrency1.Text
+Sheet3.Range("E4").Value = cbFxRate1.Text
+Sheet3.Range("B5").Value = cbUOMCHF1.Text
+
+Sheet1.Range("B7").Value = cbRegion1C.Text
+Sheet1.Range("B8").Value = cbRegion2C.Text
+Sheet1.Range("B9").Value = cbRegion3C.Text
+Sheet1.Range("B10").Value = cbRegion4C.Text
+Sheet1.Range("B11").Value = cbRegion5C.Text
+Sheet1.Range("B12").Value = cbRegion6C.Text
+Sheet1.Range("B13").Value = cbRegion7C.Text
+Sheet1.Range("B14").Value = cbRegion8C.Text
+Sheet1.Range("B15").Value = cbRegion9C.Text
+Sheet1.Range("B16").Value = cbRegion10C.Text
+
+Sheet1.Range("B21").Value = tbRegion1P.Text
+Sheet1.Range("B22").Value = tbRegion2P.Text
+Sheet1.Range("B23").Value = tbRegion3P.Text
+Sheet1.Range("B24").Value = tbRegion4P.Text
+Sheet1.Range("B25").Value = tbRegion5P.Text
+Sheet1.Range("B26").Value = tbRegion6P.Text
+Sheet1.Range("B27").Value = tbRegion7P.Text
+Sheet1.Range("B28").Value = tbRegion8P.Text
+Sheet1.Range("B29").Value = tbRegion9P.Text
+Sheet1.Range("B30").Value = tbRegion10P.Text
+
+Sheet1.Range("C7").Value = tbMaterial1C.Text
+Sheet1.Range("C8").Value = tbMaterial2C.Text
+Sheet1.Range("C9").Value = tbMaterial3C.Text
+Sheet1.Range("C10").Value = tbMaterial4C.Text
+Sheet1.Range("C11").Value = tbMaterial5C.Text
+Sheet1.Range("C12").Value = tbMaterial6C.Text
+Sheet1.Range("C13").Value = tbMaterial7C.Text
+Sheet1.Range("C14").Value = tbMaterial8C.Text
+Sheet1.Range("C15").Value = tbMaterial9C.Text
+Sheet1.Range("C16").Value = tbMaterial10C.Text
+
+Sheet1.Range("C21").Value = tbMaterial1P.Text
+Sheet1.Range("C22").Value = tbMaterial2P.Text
+Sheet1.Range("C23").Value = tbMaterial3P.Text
+Sheet1.Range("C24").Value = tbMaterial4P.Text
+Sheet1.Range("C25").Value = tbMaterial5P.Text
+Sheet1.Range("C26").Value = tbMaterial6P.Text
+Sheet1.Range("C27").Value = tbMaterial7P.Text
+Sheet1.Range("C28").Value = tbMaterial8P.Text
+Sheet1.Range("C29").Value = tbMaterial9P.Text
+Sheet1.Range("C30").Value = tbMaterial10P.Text
+
+Sheet1.Range("D7").Value = cbProdDesc1C.Text
+Sheet1.Range("D8").Value = cbProdDesc2C.Text
+Sheet1.Range("D9").Value = cbProdDesc3C.Text
+Sheet1.Range("D10").Value = cbProdDesc4C.Text
+Sheet1.Range("D11").Value = cbProdDesc5C.Text
+Sheet1.Range("D12").Value = cbProdDesc6C.Text
+Sheet1.Range("D13").Value = cbProdDesc7C.Text
+Sheet1.Range("D14").Value = cbProdDesc8C.Text
+Sheet1.Range("D15").Value = cbProdDesc9C.Text
+Sheet1.Range("D16").Value = cbProdDesc10C.Text
+
+Sheet1.Range("D21").Value = tbProdDesc1P.Text
+Sheet1.Range("D22").Value = tbProdDesc2P.Text
+Sheet1.Range("D23").Value = tbProdDesc3P.Text
+Sheet1.Range("D24").Value = tbProdDesc4P.Text
+Sheet1.Range("D25").Value = tbProdDesc5P.Text
+Sheet1.Range("D26").Value = tbProdDesc6P.Text
+Sheet1.Range("D27").Value = tbProdDesc7P.Text
+Sheet1.Range("D28").Value = tbProdDesc8P.Text
+Sheet1.Range("D29").Value = tbProdDesc9P.Text
+Sheet1.Range("D30").Value = tbProdDesc10P.Text
+
+Sheet1.Range("E7").Value = cbIncoterm1C.Text
+Sheet1.Range("E8").Value = cbIncoterm2C.Text
+Sheet1.Range("E9").Value = cbIncoterm3C.Text
+Sheet1.Range("E10").Value = cbIncoterm4C.Text
+Sheet1.Range("E11").Value = cbIncoterm5C.Text
+Sheet1.Range("E12").Value = cbIncoterm6C.Text
+Sheet1.Range("E13").Value = cbIncoterm7C.Text
+Sheet1.Range("E14").Value = cbIncoterm8C.Text
+Sheet1.Range("E15").Value = cbIncoterm9C.Text
+Sheet1.Range("E16").Value = cbIncoterm10C.Text
+
+Sheet1.Range("E21").Value = tbIncoterm1P.Text
+Sheet1.Range("E22").Value = tbIncoterm2P.Text
+Sheet1.Range("E23").Value = tbIncoterm3P.Text
+Sheet1.Range("E24").Value = tbIncoterm4P.Text
+Sheet1.Range("E25").Value = tbIncoterm5P.Text
+Sheet1.Range("E26").Value = tbIncoterm6P.Text
+Sheet1.Range("E27").Value = tbIncoterm7P.Text
+Sheet1.Range("E28").Value = tbIncoterm8P.Text
+Sheet1.Range("E29").Value = tbIncoterm9P.Text
+Sheet1.Range("E30").Value = tbIncoterm10P.Text
+
+Sheet1.Range("F7").Value = tbLocation1C.Text
+Sheet1.Range("F8").Value = tbLocation2C.Text
+Sheet1.Range("F9").Value = tbLocation3C.Text
+Sheet1.Range("F10").Value = tbLocation4C.Text
+Sheet1.Range("F11").Value = tbLocation5C.Text
+Sheet1.Range("F12").Value = tbLocation6C.Text
+Sheet1.Range("F13").Value = tbLocation7C.Text
+Sheet1.Range("F14").Value = tbLocation8C.Text
+Sheet1.Range("F15").Value = tbLocation9C.Text
+Sheet1.Range("F16").Value = tbLocation10C.Text
+
+Sheet1.Range("F21").Value = tbLocation1P.Text
+Sheet1.Range("F22").Value = tbLocation2P.Text
+Sheet1.Range("F23").Value = tbLocation3P.Text
+Sheet1.Range("F24").Value = tbLocation4P.Text
+Sheet1.Range("F25").Value = tbLocation5P.Text
+Sheet1.Range("F26").Value = tbLocation6P.Text
+Sheet1.Range("F27").Value = tbLocation7P.Text
+Sheet1.Range("F28").Value = tbLocation8P.Text
+Sheet1.Range("F29").Value = tbLocation9P.Text
+Sheet1.Range("F30").Value = tbLocation10P.Text
+
+Sheet1.Range("G7").Value = tbVolume1C.Text
+Sheet1.Range("G8").Value = tbVolume2C.Text
+Sheet1.Range("G9").Value = tbVolume3C.Text
+Sheet1.Range("G10").Value = tbVolume4C.Text
+Sheet1.Range("G11").Value = tbVolume5C.Text
+Sheet1.Range("G12").Value = tbVolume6C.Text
+Sheet1.Range("G13").Value = tbVolume7C.Text
+Sheet1.Range("G14").Value = tbVolume8C.Text
+Sheet1.Range("G15").Value = tbVolume9C.Text
+Sheet1.Range("G16").Value = tbVolume10C.Text
+
+Sheet1.Range("G21").Value = tbVolume1P.Text
+Sheet1.Range("G22").Value = tbVolume2P.Text
+Sheet1.Range("G23").Value = tbVolume3P.Text
+Sheet1.Range("G24").Value = tbVolume4P.Text
+Sheet1.Range("G25").Value = tbVolume5P.Text
+Sheet1.Range("G26").Value = tbVolume6P.Text
+Sheet1.Range("G27").Value = tbVolume7P.Text
+Sheet1.Range("G28").Value = tbVolume8P.Text
+Sheet1.Range("G29").Value = tbVolume9P.Text
+Sheet1.Range("G30").Value = tbVolume10P.Text
+
+Sheet1.Range("I7").Value = tbFCA1C.Text
+Sheet1.Range("I8").Value = tbFCA2C.Text
+Sheet1.Range("I9").Value = tbFCA3C.Text
+Sheet1.Range("I10").Value = tbFCA4C.Text
+Sheet1.Range("I11").Value = tbFCA5C.Text
+Sheet1.Range("I12").Value = tbFCA6C.Text
+Sheet1.Range("I13").Value = tbFCA7C.Text
+Sheet1.Range("I14").Value = tbFCA8C.Text
+Sheet1.Range("I15").Value = tbFCA9C.Text
+Sheet1.Range("I16").Value = tbFCA10C.Text
+
+Sheet1.Range("I21").Value = tbFCA1P.Text
+Sheet1.Range("I22").Value = tbFCA2P.Text
+Sheet1.Range("I23").Value = tbFCA3P.Text
+Sheet1.Range("I24").Value = tbFCA4P.Text
+Sheet1.Range("I25").Value = tbFCA5P.Text
+Sheet1.Range("I26").Value = tbFCA6P.Text
+Sheet1.Range("I27").Value = tbFCA7P.Text
+Sheet1.Range("I28").Value = tbFCA8P.Text
+Sheet1.Range("I29").Value = tbFCA9P.Text
+Sheet1.Range("I30").Value = tbFCA10P.Text
+
+Sheet1.Range("J7").Value = tbAdder1C.Text
+Sheet1.Range("J8").Value = tbAdder2C.Text
+Sheet1.Range("J9").Value = tbAdder3C.Text
+Sheet1.Range("J10").Value = tbAdder4C.Text
+Sheet1.Range("J11").Value = tbAdder5C.Text
+Sheet1.Range("J12").Value = tbAdder6C.Text
+Sheet1.Range("J13").Value = tbAdder7C.Text
+Sheet1.Range("J14").Value = tbAdder8C.Text
+Sheet1.Range("J15").Value = tbAdder9C.Text
+Sheet1.Range("J16").Value = tbAdder10C.Text
+
+Sheet1.Range("J21").Value = tbAdder1P.Text
+Sheet1.Range("J22").Value = tbAdder2P.Text
+Sheet1.Range("J23").Value = tbAdder3P.Text
+Sheet1.Range("J24").Value = tbAdder4P.Text
+Sheet1.Range("J25").Value = tbAdder5P.Text
+Sheet1.Range("J26").Value = tbAdder6P.Text
+Sheet1.Range("J27").Value = tbAdder7P.Text
+Sheet1.Range("J28").Value = tbAdder8P.Text
+Sheet1.Range("J29").Value = tbAdder9P.Text
+Sheet1.Range("J30").Value = tbAdder10P.Text
+
+Sheet1.Range("M7").Value = tbFrUnit1C.Text
+Sheet1.Range("M8").Value = tbFrUnit2C.Text
+Sheet1.Range("M9").Value = tbFrUnit3C.Text
+Sheet1.Range("M10").Value = tbFrUnit4C.Text
+Sheet1.Range("M11").Value = tbFrUnit5C.Text
+Sheet1.Range("M12").Value = tbFrUnit6C.Text
+Sheet1.Range("M13").Value = tbFrUnit7C.Text
+Sheet1.Range("M14").Value = tbFrUnit8C.Text
+Sheet1.Range("M15").Value = tbFrUnit9C.Text
+Sheet1.Range("M16").Value = tbFrUnit10C.Text
+
+Sheet1.Range("M21").Value = tbFrUnit1P.Text
+Sheet1.Range("M22").Value = tbFrUnit2P.Text
+Sheet1.Range("M23").Value = tbFrUnit3P.Text
+Sheet1.Range("M24").Value = tbFrUnit4P.Text
+Sheet1.Range("M25").Value = tbFrUnit5P.Text
+Sheet1.Range("M26").Value = tbFrUnit6P.Text
+Sheet1.Range("M27").Value = tbFrUnit7P.Text
+Sheet1.Range("M28").Value = tbFrUnit8P.Text
+Sheet1.Range("M29").Value = tbFrUnit9P.Text
+Sheet1.Range("M30").Value = tbFrUnit10P.Text
+
+Sheet1.Range("N7").Value = tbDuty1C.Text
+Sheet1.Range("N8").Value = tbDuty2C.Text
+Sheet1.Range("N9").Value = tbDuty3C.Text
+Sheet1.Range("N10").Value = tbDuty4C.Text
+Sheet1.Range("N11").Value = tbDuty5C.Text
+Sheet1.Range("N12").Value = tbDuty6C.Text
+Sheet1.Range("N13").Value = tbDuty7C.Text
+Sheet1.Range("N14").Value = tbDuty8C.Text
+Sheet1.Range("N15").Value = tbDuty9C.Text
+Sheet1.Range("N16").Value = tbDuty10C.Text
+
+Sheet1.Range("N21").Value = tbDuty1P.Text
+Sheet1.Range("N22").Value = tbDuty2P.Text
+Sheet1.Range("N23").Value = tbDuty3P.Text
+Sheet1.Range("N24").Value = tbDuty4P.Text
+Sheet1.Range("N25").Value = tbDuty5P.Text
+Sheet1.Range("N26").Value = tbDuty6P.Text
+Sheet1.Range("N27").Value = tbDuty7P.Text
+Sheet1.Range("N28").Value = tbDuty8P.Text
+Sheet1.Range("N29").Value = tbDuty9P.Text
+Sheet1.Range("N30").Value = tbDuty10P.Text
+
+Sheet1.Range("O7").Value = tbRebate1C.Text
+Sheet1.Range("O8").Value = tbRebate2C.Text
+Sheet1.Range("O9").Value = tbRebate3C.Text
+Sheet1.Range("O10").Value = tbRebate4C.Text
+Sheet1.Range("O11").Value = tbRebate5C.Text
+Sheet1.Range("O12").Value = tbRebate6C.Text
+Sheet1.Range("O13").Value = tbRebate7C.Text
+Sheet1.Range("O14").Value = tbRebate8C.Text
+Sheet1.Range("O15").Value = tbRebate9C.Text
+Sheet1.Range("O16").Value = tbRebate10C.Text
+
+Sheet1.Range("O21").Value = tbRebate1P.Text
+Sheet1.Range("O22").Value = tbRebate2P.Text
+Sheet1.Range("O23").Value = tbRebate3P.Text
+Sheet1.Range("O24").Value = tbRebate4P.Text
+Sheet1.Range("O25").Value = tbRebate5P.Text
+Sheet1.Range("O26").Value = tbRebate6P.Text
+Sheet1.Range("O27").Value = tbRebate7P.Text
+Sheet1.Range("O28").Value = tbRebate8P.Text
+Sheet1.Range("O29").Value = tbRebate9P.Text
+Sheet1.Range("O30").Value = tbRebate10P.Text
+
+Sheet1.Range("R7").Value = tbCost1C.Text
+Sheet1.Range("R8").Value = tbCost2C.Text
+Sheet1.Range("R9").Value = tbCost3C.Text
+Sheet1.Range("R10").Value = tbCost4C.Text
+Sheet1.Range("R11").Value = tbCost5C.Text
+Sheet1.Range("R12").Value = tbCost6C.Text
+Sheet1.Range("R13").Value = tbCost7C.Text
+Sheet1.Range("R14").Value = tbCost8C.Text
+Sheet1.Range("R15").Value = tbCost9C.Text
+Sheet1.Range("R16").Value = tbCost10C.Text
+
+Sheet1.Range("R21").Value = tbCost1P.Text
+Sheet1.Range("R22").Value = tbCost2P.Text
+Sheet1.Range("R23").Value = tbCost3P.Text
+Sheet1.Range("R24").Value = tbCost4P.Text
+Sheet1.Range("R25").Value = tbCost5P.Text
+Sheet1.Range("R26").Value = tbCost6P.Text
+Sheet1.Range("R27").Value = tbCost7P.Text
+Sheet1.Range("R28").Value = tbCost8P.Text
+Sheet1.Range("R29").Value = tbCost9P.Text
+Sheet1.Range("R30").Value = tbCost10P.Text
+
+Sheet1.Range("W7").Value = tbServices1C.Text
+Sheet1.Range("W8").Value = tbServices2C.Text
+Sheet1.Range("W9").Value = tbServices3C.Text
+Sheet1.Range("W10").Value = tbServices4C.Text
+Sheet1.Range("W11").Value = tbServices5C.Text
+Sheet1.Range("W12").Value = tbServices6C.Text
+Sheet1.Range("W13").Value = tbServices7C.Text
+Sheet1.Range("W14").Value = tbServices8C.Text
+Sheet1.Range("W15").Value = tbServices9C.Text
+Sheet1.Range("W16").Value = tbServices10C.Text
+
+Sheet1.Range("W21").Value = tbServices1P.Text
+Sheet1.Range("W22").Value = tbServices2P.Text
+Sheet1.Range("W23").Value = tbServices3P.Text
+Sheet1.Range("W24").Value = tbServices4P.Text
+Sheet1.Range("W25").Value = tbServices5P.Text
+Sheet1.Range("W26").Value = tbServices6P.Text
+Sheet1.Range("W27").Value = tbServices7P.Text
+Sheet1.Range("W28").Value = tbServices8P.Text
+Sheet1.Range("W29").Value = tbServices9P.Text
+Sheet1.Range("W30").Value = tbServices10P.Text
+
+
+
+Unload Me
+
+
+'Sheet1.Activate
+
+End Sub
+
+'Clearing the boxes*****************************************************************************************************
+Private Sub cbClear1C_Click()
+
+cbRegion1C.BackColor = &HC0C0FF
+tbMaterial1C.BackColor = &HC0C0FF
+cbProdDesc1C.BackColor = &HC0C0FF
+cbIncoterm1C.BackColor = &HC0C0FF
+tbLocation1C.BackColor = &HC0C0FF
+tbVolume1C.BackColor = &HC0C0FF
+tbFCA1C.BackColor = &HC0C0FF
+tbAdder1C.BackColor = &HC0C0FF
+tbFrUnit1C.BackColor = &HC0C0FF
+tbDuty1C.BackColor = &HC0C0FF
+tbRebate1C.BackColor = &HC0C0FF
+tbCost1C.BackColor = &HC0C0FF
+tbServices1C.BackColor = &HC0C0FF
+
+
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+
+
+Select Case iResponse
+
+Case vbYes
+cbRegion1C.Value = ""
+tbMaterial1C.Value = ""
+cbProdDesc1C.Value = ""
+cbIncoterm1C.Value = ""
+tbLocation1C.Value = ""
+tbVolume1C.Value = ""
+tbFCA1C.Value = ""
+tbAdder1C.Value = ""
+tbFrUnit1C.Value = ""
+tbDuty1C.Value = ""
+tbRebate1C.Value = ""
+tbCost1C.Value = ""
+tbServices1C.Value = ""
+
+
+cbRegion1C.BackColor = &H80000005
+tbMaterial1C.BackColor = &H80000005
+cbProdDesc1C.BackColor = &H80000005
+cbIncoterm1C.BackColor = &H80000005
+tbLocation1C.BackColor = &H80000005
+tbVolume1C.BackColor = &H80000005
+tbFCA1C.BackColor = &H80000005
+tbAdder1C.BackColor = &H80000005
+tbFrUnit1C.BackColor = &H80000005
+tbDuty1C.BackColor = &H80000005
+tbRebate1C.BackColor = &H80000005
+tbCost1C.BackColor = &H80000005
+tbServices1C.BackColor = &H80000005
+
+Case vbNo
+cbRegion1C.BackColor = &H80000005
+tbMaterial1C.BackColor = &H80000005
+cbProdDesc1C.BackColor = &H80000005
+cbIncoterm1C.BackColor = &H80000005
+tbLocation1C.BackColor = &H80000005
+tbVolume1C.BackColor = &H80000005
+tbFCA1C.BackColor = &H80000005
+tbAdder1C.BackColor = &H80000005
+tbFrUnit1C.BackColor = &H80000005
+tbDuty1C.BackColor = &H80000005
+tbRebate1C.BackColor = &H80000005
+tbCost1C.BackColor = &H80000005
+tbServices1C.BackColor = &H80000005
+
+End Select
+
+
+
+End Sub
+
+Private Sub cbClear2C_Click()
+
+cbRegion2C.BackColor = &HC0C0FF
+tbMaterial2C.BackColor = &HC0C0FF
+cbProdDesc2C.BackColor = &HC0C0FF
+cbIncoterm2C.BackColor = &HC0C0FF
+tbLocation2C.BackColor = &HC0C0FF
+tbVolume2C.BackColor = &HC0C0FF
+tbFCA2C.BackColor = &HC0C0FF
+tbAdder2C.BackColor = &HC0C0FF
+tbFrUnit2C.BackColor = &HC0C0FF
+tbDuty2C.BackColor = &HC0C0FF
+tbRebate2C.BackColor = &HC0C0FF
+tbCost2C.BackColor = &HC0C0FF
+tbServices2C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion2C.Value = ""
+tbMaterial2C.Value = ""
+cbProdDesc2C.Value = ""
+cbIncoterm2C.Value = ""
+tbLocation2C.Value = ""
+tbVolume2C.Value = ""
+tbFCA2C.Value = ""
+tbAdder2C.Value = ""
+tbFrUnit2C.Value = ""
+tbDuty2C.Value = ""
+tbRebate2C.Value = ""
+tbCost2C.Value = ""
+tbServices2C.Value = ""
+
+cbRegion2C.BackColor = &H80000005
+tbMaterial2C.BackColor = &H80000005
+cbProdDesc2C.BackColor = &H80000005
+cbIncoterm2C.BackColor = &H80000005
+tbLocation2C.BackColor = &H80000005
+tbVolume2C.BackColor = &H80000005
+tbFCA2C.BackColor = &H80000005
+tbAdder2C.BackColor = &H80000005
+tbFrUnit2C.BackColor = &H80000005
+tbDuty2C.BackColor = &H80000005
+tbRebate2C.BackColor = &H80000005
+tbCost2C.BackColor = &H80000005
+tbServices2C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion2C.BackColor = &H80000005
+tbMaterial2C.BackColor = &H80000005
+cbProdDesc2C.BackColor = &H80000005
+cbIncoterm2C.BackColor = &H80000005
+tbLocation2C.BackColor = &H80000005
+tbVolume2C.BackColor = &H80000005
+tbFCA2C.BackColor = &H80000005
+tbAdder2C.BackColor = &H80000005
+tbFrUnit2C.BackColor = &H80000005
+tbDuty2C.BackColor = &H80000005
+tbRebate2C.BackColor = &H80000005
+tbCost2C.BackColor = &H80000005
+tbServices2C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear3C_Click()
+
+cbRegion3C.BackColor = &HC0C0FF
+tbMaterial3C.BackColor = &HC0C0FF
+cbProdDesc3C.BackColor = &HC0C0FF
+cbIncoterm3C.BackColor = &HC0C0FF
+tbLocation3C.BackColor = &HC0C0FF
+tbVolume3C.BackColor = &HC0C0FF
+tbFCA3C.BackColor = &HC0C0FF
+tbAdder3C.BackColor = &HC0C0FF
+tbFrUnit3C.BackColor = &HC0C0FF
+tbDuty3C.BackColor = &HC0C0FF
+tbRebate3C.BackColor = &HC0C0FF
+tbCost3C.BackColor = &HC0C0FF
+tbServices3C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion3C.Value = ""
+tbMaterial3C.Value = ""
+cbProdDesc3C.Value = ""
+cbIncoterm3C.Value = ""
+tbLocation3C.Value = ""
+tbVolume3C.Value = ""
+tbFCA3C.Value = ""
+tbAdder3C.Value = ""
+tbFrUnit3C.Value = ""
+tbDuty3C.Value = ""
+tbRebate3C.Value = ""
+tbCost3C.Value = ""
+tbServices3C.Value = ""
+
+cbRegion3C.BackColor = &H80000005
+tbMaterial3C.BackColor = &H80000005
+cbProdDesc3C.BackColor = &H80000005
+cbIncoterm3C.BackColor = &H80000005
+tbLocation3C.BackColor = &H80000005
+tbVolume3C.BackColor = &H80000005
+tbFCA3C.BackColor = &H80000005
+tbAdder3C.BackColor = &H80000005
+tbFrUnit3C.BackColor = &H80000005
+tbDuty3C.BackColor = &H80000005
+tbRebate3C.BackColor = &H80000005
+tbCost3C.BackColor = &H80000005
+tbServices3C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion3C.BackColor = &H80000005
+tbMaterial3C.BackColor = &H80000005
+cbProdDesc3C.BackColor = &H80000005
+cbIncoterm3C.BackColor = &H80000005
+tbLocation3C.BackColor = &H80000005
+tbVolume3C.BackColor = &H80000005
+tbFCA3C.BackColor = &H80000005
+tbAdder3C.BackColor = &H80000005
+tbFrUnit3C.BackColor = &H80000005
+tbDuty3C.BackColor = &H80000005
+tbRebate3C.BackColor = &H80000005
+tbCost3C.BackColor = &H80000005
+tbServices3C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear4C_Click()
+
+cbRegion4C.BackColor = &HC0C0FF
+tbMaterial4C.BackColor = &HC0C0FF
+cbProdDesc4C.BackColor = &HC0C0FF
+cbIncoterm4C.BackColor = &HC0C0FF
+tbLocation4C.BackColor = &HC0C0FF
+tbVolume4C.BackColor = &HC0C0FF
+tbFCA4C.BackColor = &HC0C0FF
+tbAdder4C.BackColor = &HC0C0FF
+tbFrUnit4C.BackColor = &HC0C0FF
+tbDuty4C.BackColor = &HC0C0FF
+tbRebate4C.BackColor = &HC0C0FF
+tbCost4C.BackColor = &HC0C0FF
+tbServices4C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion4C.Value = ""
+tbMaterial4C.Value = ""
+cbProdDesc4C.Value = ""
+cbIncoterm4C.Value = ""
+tbLocation4C.Value = ""
+tbVolume4C.Value = ""
+tbFCA4C.Value = ""
+tbAdder4C.Value = ""
+tbFrUnit4C.Value = ""
+tbDuty4C.Value = ""
+tbRebate4C.Value = ""
+tbCost4C.Value = ""
+tbServices4C.Value = ""
+
+cbRegion4C.BackColor = &H80000005
+tbMaterial4C.BackColor = &H80000005
+cbProdDesc4C.BackColor = &H80000005
+cbIncoterm4C.BackColor = &H80000005
+tbLocation4C.BackColor = &H80000005
+tbVolume4C.BackColor = &H80000005
+tbFCA4C.BackColor = &H80000005
+tbAdder4C.BackColor = &H80000005
+tbFrUnit4C.BackColor = &H80000005
+tbDuty4C.BackColor = &H80000005
+tbRebate4C.BackColor = &H80000005
+tbCost4C.BackColor = &H80000005
+tbServices4C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion4C.BackColor = &H80000005
+tbMaterial4C.BackColor = &H80000005
+cbProdDesc4C.BackColor = &H80000005
+cbIncoterm4C.BackColor = &H80000005
+tbLocation4C.BackColor = &H80000005
+tbVolume4C.BackColor = &H80000005
+tbFCA4C.BackColor = &H80000005
+tbAdder4C.BackColor = &H80000005
+tbFrUnit4C.BackColor = &H80000005
+tbDuty4C.BackColor = &H80000005
+tbRebate4C.BackColor = &H80000005
+tbCost4C.BackColor = &H80000005
+tbServices4C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear5C_Click()
+
+cbRegion5C.BackColor = &HC0C0FF
+tbMaterial5C.BackColor = &HC0C0FF
+cbProdDesc5C.BackColor = &HC0C0FF
+cbIncoterm5C.BackColor = &HC0C0FF
+tbLocation5C.BackColor = &HC0C0FF
+tbVolume5C.BackColor = &HC0C0FF
+tbFCA5C.BackColor = &HC0C0FF
+tbAdder5C.BackColor = &HC0C0FF
+tbFrUnit5C.BackColor = &HC0C0FF
+tbDuty5C.BackColor = &HC0C0FF
+tbRebate5C.BackColor = &HC0C0FF
+tbCost5C.BackColor = &HC0C0FF
+tbServices5C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion5C.Value = ""
+tbMaterial5C.Value = ""
+cbProdDesc5C.Value = ""
+cbIncoterm5C.Value = ""
+tbLocation5C.Value = ""
+tbVolume5C.Value = ""
+tbFCA5C.Value = ""
+tbAdder5C.Value = ""
+tbFrUnit5C.Value = ""
+tbDuty5C.Value = ""
+tbRebate5C.Value = ""
+tbCost5C.Value = ""
+tbServices5C.Value = ""
+
+cbRegion5C.BackColor = &H80000005
+tbMaterial5C.BackColor = &H80000005
+cbProdDesc5C.BackColor = &H80000005
+cbIncoterm5C.BackColor = &H80000005
+tbLocation5C.BackColor = &H80000005
+tbVolume5C.BackColor = &H80000005
+tbFCA5C.BackColor = &H80000005
+tbAdder5C.BackColor = &H80000005
+tbFrUnit5C.BackColor = &H80000005
+tbDuty5C.BackColor = &H80000005
+tbRebate5C.BackColor = &H80000005
+tbCost5C.BackColor = &H80000005
+tbServices5C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion5C.BackColor = &H80000005
+tbMaterial5C.BackColor = &H80000005
+cbProdDesc5C.BackColor = &H80000005
+cbIncoterm5C.BackColor = &H80000005
+tbLocation5C.BackColor = &H80000005
+tbVolume5C.BackColor = &H80000005
+tbFCA5C.BackColor = &H80000005
+tbAdder5C.BackColor = &H80000005
+tbFrUnit5C.BackColor = &H80000005
+tbDuty5C.BackColor = &H80000005
+tbRebate5C.BackColor = &H80000005
+tbCost5C.BackColor = &H80000005
+tbServices5C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear6C_Click()
+
+cbRegion6C.BackColor = &HC0C0FF
+tbMaterial6C.BackColor = &HC0C0FF
+cbProdDesc6C.BackColor = &HC0C0FF
+cbIncoterm6C.BackColor = &HC0C0FF
+tbLocation6C.BackColor = &HC0C0FF
+tbVolume6C.BackColor = &HC0C0FF
+tbFCA6C.BackColor = &HC0C0FF
+tbAdder6C.BackColor = &HC0C0FF
+tbFrUnit6C.BackColor = &HC0C0FF
+tbDuty6C.BackColor = &HC0C0FF
+tbRebate6C.BackColor = &HC0C0FF
+tbCost6C.BackColor = &HC0C0FF
+tbServices6C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion6C.Value = ""
+tbMaterial6C.Value = ""
+cbProdDesc6C.Value = ""
+cbIncoterm6C.Value = ""
+tbLocation6C.Value = ""
+tbVolume6C.Value = ""
+tbFCA6C.Value = ""
+tbAdder6C.Value = ""
+tbFrUnit6C.Value = ""
+tbDuty6C.Value = ""
+tbRebate6C.Value = ""
+tbCost6C.Value = ""
+tbServices6C.Value = ""
+
+cbRegion6C.BackColor = &H80000005
+tbMaterial6C.BackColor = &H80000005
+cbProdDesc6C.BackColor = &H80000005
+cbIncoterm6C.BackColor = &H80000005
+tbLocation6C.BackColor = &H80000005
+tbVolume6C.BackColor = &H80000005
+tbFCA6C.BackColor = &H80000005
+tbAdder6C.BackColor = &H80000005
+tbFrUnit6C.BackColor = &H80000005
+tbDuty6C.BackColor = &H80000005
+tbRebate6C.BackColor = &H80000005
+tbCost6C.BackColor = &H80000005
+tbServices6C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion6C.BackColor = &H80000005
+tbMaterial6C.BackColor = &H80000005
+cbProdDesc6C.BackColor = &H80000005
+cbIncoterm6C.BackColor = &H80000005
+tbLocation6C.BackColor = &H80000005
+tbVolume6C.BackColor = &H80000005
+tbFCA6C.BackColor = &H80000005
+tbAdder6C.BackColor = &H80000005
+tbFrUnit6C.BackColor = &H80000005
+tbDuty6C.BackColor = &H80000005
+tbRebate6C.BackColor = &H80000005
+tbCost6C.BackColor = &H80000005
+tbServices6C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear7C_Click()
+
+cbRegion7C.BackColor = &HC0C0FF
+tbMaterial7C.BackColor = &HC0C0FF
+cbProdDesc7C.BackColor = &HC0C0FF
+cbIncoterm7C.BackColor = &HC0C0FF
+tbLocation7C.BackColor = &HC0C0FF
+tbVolume7C.BackColor = &HC0C0FF
+tbFCA7C.BackColor = &HC0C0FF
+tbAdder7C.BackColor = &HC0C0FF
+tbFrUnit7C.BackColor = &HC0C0FF
+tbDuty7C.BackColor = &HC0C0FF
+tbRebate7C.BackColor = &HC0C0FF
+tbCost7C.BackColor = &HC0C0FF
+tbServices7C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion7C.Value = ""
+tbMaterial7C.Value = ""
+cbProdDesc7C.Value = ""
+cbIncoterm7C.Value = ""
+tbLocation7C.Value = ""
+tbVolume7C.Value = ""
+tbFCA7C.Value = ""
+tbAdder7C.Value = ""
+tbFrUnit7C.Value = ""
+tbDuty7C.Value = ""
+tbRebate7C.Value = ""
+tbCost7C.Value = ""
+tbServices7C.Value = ""
+
+cbRegion7C.BackColor = &H80000005
+tbMaterial7C.BackColor = &H80000005
+cbProdDesc7C.BackColor = &H80000005
+cbIncoterm7C.BackColor = &H80000005
+tbLocation7C.BackColor = &H80000005
+tbVolume7C.BackColor = &H80000005
+tbFCA7C.BackColor = &H80000005
+tbAdder7C.BackColor = &H80000005
+tbFrUnit7C.BackColor = &H80000005
+tbDuty7C.BackColor = &H80000005
+tbRebate7C.BackColor = &H80000005
+tbCost7C.BackColor = &H80000005
+tbServices7C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion7C.BackColor = &H80000005
+tbMaterial7C.BackColor = &H80000005
+cbProdDesc7C.BackColor = &H80000005
+cbIncoterm7C.BackColor = &H80000005
+tbLocation7C.BackColor = &H80000005
+tbVolume7C.BackColor = &H80000005
+tbFCA7C.BackColor = &H80000005
+tbAdder7C.BackColor = &H80000005
+tbFrUnit7C.BackColor = &H80000005
+tbDuty7C.BackColor = &H80000005
+tbRebate7C.BackColor = &H80000005
+tbCost7C.BackColor = &H80000005
+tbServices7C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear8C_Click()
+
+cbRegion8C.BackColor = &HC0C0FF
+tbMaterial8C.BackColor = &HC0C0FF
+cbProdDesc8C.BackColor = &HC0C0FF
+cbIncoterm8C.BackColor = &HC0C0FF
+tbLocation8C.BackColor = &HC0C0FF
+tbVolume8C.BackColor = &HC0C0FF
+tbFCA8C.BackColor = &HC0C0FF
+tbAdder8C.BackColor = &HC0C0FF
+tbFrUnit8C.BackColor = &HC0C0FF
+tbDuty8C.BackColor = &HC0C0FF
+tbRebate8C.BackColor = &HC0C0FF
+tbCost8C.BackColor = &HC0C0FF
+tbServices8C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion8C.Value = ""
+tbMaterial8C.Value = ""
+cbProdDesc8C.Value = ""
+cbIncoterm8C.Value = ""
+tbLocation8C.Value = ""
+tbVolume8C.Value = ""
+tbFCA8C.Value = ""
+tbAdder8C.Value = ""
+tbFrUnit8C.Value = ""
+tbDuty8C.Value = ""
+tbRebate8C.Value = ""
+tbCost8C.Value = ""
+tbServices8C.Value = ""
+
+cbRegion8C.BackColor = &H80000005
+tbMaterial8C.BackColor = &H80000005
+cbProdDesc8C.BackColor = &H80000005
+cbIncoterm8C.BackColor = &H80000005
+tbLocation8C.BackColor = &H80000005
+tbVolume8C.BackColor = &H80000005
+tbFCA8C.BackColor = &H80000005
+tbAdder8C.BackColor = &H80000005
+tbFrUnit8C.BackColor = &H80000005
+tbDuty8C.BackColor = &H80000005
+tbRebate8C.BackColor = &H80000005
+tbCost8C.BackColor = &H80000005
+tbServices8C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion8C.BackColor = &H80000005
+tbMaterial8C.BackColor = &H80000005
+cbProdDesc8C.BackColor = &H80000005
+cbIncoterm8C.BackColor = &H80000005
+tbLocation8C.BackColor = &H80000005
+tbVolume8C.BackColor = &H80000005
+tbFCA8C.BackColor = &H80000005
+tbAdder8C.BackColor = &H80000005
+tbFrUnit8C.BackColor = &H80000005
+tbDuty8C.BackColor = &H80000005
+tbRebate8C.BackColor = &H80000005
+tbCost8C.BackColor = &H80000005
+tbServices8C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear9C_Click()
+
+cbRegion9C.BackColor = &HC0C0FF
+tbMaterial9C.BackColor = &HC0C0FF
+cbProdDesc9C.BackColor = &HC0C0FF
+cbIncoterm9C.BackColor = &HC0C0FF
+tbLocation9C.BackColor = &HC0C0FF
+tbVolume9C.BackColor = &HC0C0FF
+tbFCA9C.BackColor = &HC0C0FF
+tbAdder9C.BackColor = &HC0C0FF
+tbFrUnit9C.BackColor = &HC0C0FF
+tbDuty9C.BackColor = &HC0C0FF
+tbRebate9C.BackColor = &HC0C0FF
+tbCost9C.BackColor = &HC0C0FF
+tbServices9C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion9C.Value = ""
+tbMaterial9C.Value = ""
+cbProdDesc9C.Value = ""
+cbIncoterm9C.Value = ""
+tbLocation9C.Value = ""
+tbVolume9C.Value = ""
+tbFCA9C.Value = ""
+tbAdder9C.Value = ""
+tbFrUnit9C.Value = ""
+tbDuty9C.Value = ""
+tbRebate9C.Value = ""
+tbCost9C.Value = ""
+tbServices9C.Value = ""
+
+cbRegion9C.BackColor = &H80000005
+tbMaterial9C.BackColor = &H80000005
+cbProdDesc9C.BackColor = &H80000005
+cbIncoterm9C.BackColor = &H80000005
+tbLocation9C.BackColor = &H80000005
+tbVolume9C.BackColor = &H80000005
+tbFCA9C.BackColor = &H80000005
+tbAdder9C.BackColor = &H80000005
+tbFrUnit9C.BackColor = &H80000005
+tbDuty9C.BackColor = &H80000005
+tbRebate9C.BackColor = &H80000005
+tbCost9C.BackColor = &H80000005
+tbServices9C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion9C.BackColor = &H80000005
+tbMaterial9C.BackColor = &H80000005
+cbProdDesc9C.BackColor = &H80000005
+cbIncoterm9C.BackColor = &H80000005
+tbLocation9C.BackColor = &H80000005
+tbVolume9C.BackColor = &H80000005
+tbFCA9C.BackColor = &H80000005
+tbAdder9C.BackColor = &H80000005
+tbFrUnit9C.BackColor = &H80000005
+tbDuty9C.BackColor = &H80000005
+tbRebate9C.BackColor = &H80000005
+tbCost9C.BackColor = &H80000005
+tbServices9C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear10C_Click()
+
+cbRegion10C.BackColor = &HC0C0FF
+tbMaterial10C.BackColor = &HC0C0FF
+cbProdDesc10C.BackColor = &HC0C0FF
+cbIncoterm10C.BackColor = &HC0C0FF
+tbLocation10C.BackColor = &HC0C0FF
+tbVolume10C.BackColor = &HC0C0FF
+tbFCA10C.BackColor = &HC0C0FF
+tbAdder10C.BackColor = &HC0C0FF
+tbFrUnit10C.BackColor = &HC0C0FF
+tbDuty10C.BackColor = &HC0C0FF
+tbRebate10C.BackColor = &HC0C0FF
+tbCost10C.BackColor = &HC0C0FF
+tbServices10C.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+cbRegion10C.Value = ""
+tbMaterial10C.Value = ""
+cbProdDesc10C.Value = ""
+cbIncoterm10C.Value = ""
+tbLocation10C.Value = ""
+tbVolume10C.Value = ""
+tbFCA10C.Value = ""
+tbAdder10C.Value = ""
+tbFrUnit10C.Value = ""
+tbDuty10C.Value = ""
+tbRebate10C.Value = ""
+tbCost10C.Value = ""
+tbServices10C.Value = ""
+
+cbRegion10C.BackColor = &H80000005
+tbMaterial10C.BackColor = &H80000005
+cbProdDesc10C.BackColor = &H80000005
+cbIncoterm10C.BackColor = &H80000005
+tbLocation10C.BackColor = &H80000005
+tbVolume10C.BackColor = &H80000005
+tbFCA10C.BackColor = &H80000005
+tbAdder10C.BackColor = &H80000005
+tbFrUnit10C.BackColor = &H80000005
+tbDuty10C.BackColor = &H80000005
+tbRebate10C.BackColor = &H80000005
+tbCost10C.BackColor = &H80000005
+tbServices10C.BackColor = &H80000005
+
+Case vbNo
+
+cbRegion10C.BackColor = &H80000005
+tbMaterial10C.BackColor = &H80000005
+cbProdDesc10C.BackColor = &H80000005
+cbIncoterm10C.BackColor = &H80000005
+tbLocation10C.BackColor = &H80000005
+tbVolume10C.BackColor = &H80000005
+tbFCA10C.BackColor = &H80000005
+tbAdder10C.BackColor = &H80000005
+tbFrUnit10C.BackColor = &H80000005
+tbDuty10C.BackColor = &H80000005
+tbRebate10C.BackColor = &H80000005
+tbCost10C.BackColor = &H80000005
+tbServices10C.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear1P_Click()
+
+tbVolume1P.BackColor = &HC0C0FF
+tbFCA1P.BackColor = &HC0C0FF
+tbAdder1P.BackColor = &HC0C0FF
+tbFrUnit1P.BackColor = &HC0C0FF
+tbDuty1P.BackColor = &HC0C0FF
+tbRebate1P.BackColor = &HC0C0FF
+tbCost1P.BackColor = &HC0C0FF
+tbServices1P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume1P.Value = ""
+tbFCA1P.Value = ""
+tbAdder1P.Value = ""
+tbFrUnit1P.Value = ""
+tbDuty1P.Value = ""
+tbRebate1P.Value = ""
+tbCost1P.Value = ""
+tbServices1P.Value = ""
+
+tbVolume1P.BackColor = &H80000005
+tbFCA1P.BackColor = &H80000005
+tbAdder1P.BackColor = &H80000005
+tbFrUnit1P.BackColor = &H80000005
+tbDuty1P.BackColor = &H80000005
+tbRebate1P.BackColor = &H80000005
+tbCost1P.BackColor = &H80000005
+tbServices1P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume1P.BackColor = &H80000005
+tbFCA1P.BackColor = &H80000005
+tbAdder1P.BackColor = &H80000005
+tbFrUnit1P.BackColor = &H80000005
+tbDuty1P.BackColor = &H80000005
+tbRebate1P.BackColor = &H80000005
+tbCost1P.BackColor = &H80000005
+tbServices1P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear2P_Click()
+
+tbVolume2P.BackColor = &HC0C0FF
+tbFCA2P.BackColor = &HC0C0FF
+tbAdder2P.BackColor = &HC0C0FF
+tbFrUnit2P.BackColor = &HC0C0FF
+tbDuty2P.BackColor = &HC0C0FF
+tbRebate2P.BackColor = &HC0C0FF
+tbCost2P.BackColor = &HC0C0FF
+tbServices2P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume2P.Value = ""
+tbFCA2P.Value = ""
+tbAdder2P.Value = ""
+tbFrUnit2P.Value = ""
+tbDuty2P.Value = ""
+tbRebate2P.Value = ""
+tbCost2P.Value = ""
+tbServices2P.Value = ""
+
+tbVolume2P.BackColor = &H80000005
+tbFCA2P.BackColor = &H80000005
+tbAdder2P.BackColor = &H80000005
+tbFrUnit2P.BackColor = &H80000005
+tbDuty2P.BackColor = &H80000005
+tbRebate2P.BackColor = &H80000005
+tbCost2P.BackColor = &H80000005
+tbServices2P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume2P.BackColor = &H80000005
+tbFCA2P.BackColor = &H80000005
+tbAdder2P.BackColor = &H80000005
+tbFrUnit2P.BackColor = &H80000005
+tbDuty2P.BackColor = &H80000005
+tbRebate2P.BackColor = &H80000005
+tbCost2P.BackColor = &H80000005
+tbServices2P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear3P_Click()
+
+tbVolume3P.BackColor = &HC0C0FF
+tbFCA3P.BackColor = &HC0C0FF
+tbAdder3P.BackColor = &HC0C0FF
+tbFrUnit3P.BackColor = &HC0C0FF
+tbDuty3P.BackColor = &HC0C0FF
+tbRebate3P.BackColor = &HC0C0FF
+tbCost3P.BackColor = &HC0C0FF
+tbServices3P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume3P.Value = ""
+tbFCA3P.Value = ""
+tbAdder3P.Value = ""
+tbFrUnit3P.Value = ""
+tbDuty3P.Value = ""
+tbRebate3P.Value = ""
+tbCost3P.Value = ""
+tbServices3P.Value = ""
+
+tbVolume3P.BackColor = &H80000005
+tbFCA3P.BackColor = &H80000005
+tbAdder3P.BackColor = &H80000005
+tbFrUnit3P.BackColor = &H80000005
+tbDuty3P.BackColor = &H80000005
+tbRebate3P.BackColor = &H80000005
+tbCost3P.BackColor = &H80000005
+tbServices3P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume3P.BackColor = &H80000005
+tbFCA3P.BackColor = &H80000005
+tbAdder3P.BackColor = &H80000005
+tbFrUnit3P.BackColor = &H80000005
+tbDuty3P.BackColor = &H80000005
+tbRebate3P.BackColor = &H80000005
+tbCost3P.BackColor = &H80000005
+tbServices3P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear4P_Click()
+
+tbVolume4P.BackColor = &HC0C0FF
+tbFCA4P.BackColor = &HC0C0FF
+tbAdder4P.BackColor = &HC0C0FF
+tbFrUnit4P.BackColor = &HC0C0FF
+tbDuty4P.BackColor = &HC0C0FF
+tbRebate4P.BackColor = &HC0C0FF
+tbCost4P.BackColor = &HC0C0FF
+tbServices4P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume4P.Value = ""
+tbFCA4P.Value = ""
+tbAdder4P.Value = ""
+tbFrUnit4P.Value = ""
+tbDuty4P.Value = ""
+tbRebate4P.Value = ""
+tbCost4P.Value = ""
+tbServices4P.Value = ""
+
+tbVolume4P.BackColor = &H80000005
+tbFCA4P.BackColor = &H80000005
+tbAdder4P.BackColor = &H80000005
+tbFrUnit4P.BackColor = &H80000005
+tbDuty4P.BackColor = &H80000005
+tbRebate4P.BackColor = &H80000005
+tbCost4P.BackColor = &H80000005
+tbServices4P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume4P.BackColor = &H80000005
+tbFCA4P.BackColor = &H80000005
+tbAdder4P.BackColor = &H80000005
+tbFrUnit4P.BackColor = &H80000005
+tbDuty4P.BackColor = &H80000005
+tbRebate4P.BackColor = &H80000005
+tbCost4P.BackColor = &H80000005
+tbServices4P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear5P_Click()
+
+tbVolume5P.BackColor = &HC0C0FF
+tbFCA5P.BackColor = &HC0C0FF
+tbAdder5P.BackColor = &HC0C0FF
+tbFrUnit5P.BackColor = &HC0C0FF
+tbDuty5P.BackColor = &HC0C0FF
+tbRebate5P.BackColor = &HC0C0FF
+tbCost5P.BackColor = &HC0C0FF
+tbServices5P.BackColor = &HC0C0FF
+
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume5P.Value = ""
+tbFCA5P.Value = ""
+tbAdder5P.Value = ""
+tbFrUnit5P.Value = ""
+tbDuty5P.Value = ""
+tbRebate5P.Value = ""
+tbCost5P.Value = ""
+tbServices5P.Value = ""
+
+tbVolume5P.BackColor = &H80000005
+tbFCA5P.BackColor = &H80000005
+tbAdder5P.BackColor = &H80000005
+tbFrUnit5P.BackColor = &H80000005
+tbDuty5P.BackColor = &H80000005
+tbRebate5P.BackColor = &H80000005
+tbCost5P.BackColor = &H80000005
+tbServices5P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume5P.BackColor = &H80000005
+tbFCA5P.BackColor = &H80000005
+tbAdder5P.BackColor = &H80000005
+tbFrUnit5P.BackColor = &H80000005
+tbDuty5P.BackColor = &H80000005
+tbRebate5P.BackColor = &H80000005
+tbCost5P.BackColor = &H80000005
+tbServices5P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear6P_Click()
+
+tbVolume6P.BackColor = &HC0C0FF
+tbFCA6P.BackColor = &HC0C0FF
+tbAdder6P.BackColor = &HC0C0FF
+tbFrUnit6P.BackColor = &HC0C0FF
+tbDuty6P.BackColor = &HC0C0FF
+tbRebate6P.BackColor = &HC0C0FF
+tbCost6P.BackColor = &HC0C0FF
+tbServices6P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume6P.Value = ""
+tbFCA6P.Value = ""
+tbAdder6P.Value = ""
+tbFrUnit6P.Value = ""
+tbDuty6P.Value = ""
+tbRebate6P.Value = ""
+tbCost6P.Value = ""
+tbServices6P.Value = ""
+
+tbVolume6P.BackColor = &H80000005
+tbFCA6P.BackColor = &H80000005
+tbAdder6P.BackColor = &H80000005
+tbFrUnit6P.BackColor = &H80000005
+tbDuty6P.BackColor = &H80000005
+tbRebate6P.BackColor = &H80000005
+tbCost6P.BackColor = &H80000005
+tbServices6P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume6P.BackColor = &H80000005
+tbFCA6P.BackColor = &H80000005
+tbAdder6P.BackColor = &H80000005
+tbFrUnit6P.BackColor = &H80000005
+tbDuty6P.BackColor = &H80000005
+tbRebate6P.BackColor = &H80000005
+tbCost6P.BackColor = &H80000005
+tbServices6P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear7P_Click()
+
+tbVolume7P.BackColor = &HC0C0FF
+tbFCA7P.BackColor = &HC0C0FF
+tbAdder7P.BackColor = &HC0C0FF
+tbFrUnit7P.BackColor = &HC0C0FF
+tbDuty7P.BackColor = &HC0C0FF
+tbRebate7P.BackColor = &HC0C0FF
+tbCost7P.BackColor = &HC0C0FF
+tbServices7P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume7P.Value = ""
+tbFCA7P.Value = ""
+tbAdder7P.Value = ""
+tbFrUnit7P.Value = ""
+tbDuty7P.Value = ""
+tbRebate7P.Value = ""
+tbCost7P.Value = ""
+tbServices7P.Value = ""
+
+tbVolume7P.BackColor = &H80000005
+tbFCA7P.BackColor = &H80000005
+tbAdder7P.BackColor = &H80000005
+tbFrUnit7P.BackColor = &H80000005
+tbDuty7P.BackColor = &H80000005
+tbRebate7P.BackColor = &H80000005
+tbCost7P.BackColor = &H80000005
+tbServices7P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume7P.BackColor = &H80000005
+tbFCA7P.BackColor = &H80000005
+tbAdder7P.BackColor = &H80000005
+tbFrUnit7P.BackColor = &H80000005
+tbDuty7P.BackColor = &H80000005
+tbRebate7P.BackColor = &H80000005
+tbCost7P.BackColor = &H80000005
+tbServices7P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear8P_Click()
+
+
+tbVolume8P.BackColor = &HC0C0FF
+tbFCA8P.BackColor = &HC0C0FF
+tbAdder8P.BackColor = &HC0C0FF
+tbFrUnit8P.BackColor = &HC0C0FF
+tbDuty8P.BackColor = &HC0C0FF
+tbRebate8P.BackColor = &HC0C0FF
+tbCost8P.BackColor = &HC0C0FF
+tbServices8P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume8P.Value = ""
+tbFCA8P.Value = ""
+tbAdder8P.Value = ""
+tbFrUnit8P.Value = ""
+tbDuty8P.Value = ""
+tbRebate8P.Value = ""
+tbCost8P.Value = ""
+tbServices8P.Value = ""
+
+tbVolume8P.BackColor = &H80000005
+tbFCA8P.BackColor = &H80000005
+tbAdder8P.BackColor = &H80000005
+tbFrUnit8P.BackColor = &H80000005
+tbDuty8P.BackColor = &H80000005
+tbRebate8P.BackColor = &H80000005
+tbCost8P.BackColor = &H80000005
+tbServices8P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume8P.BackColor = &H80000005
+tbFCA8P.BackColor = &H80000005
+tbAdder8P.BackColor = &H80000005
+tbFrUnit8P.BackColor = &H80000005
+tbDuty8P.BackColor = &H80000005
+tbRebate8P.BackColor = &H80000005
+tbCost8P.BackColor = &H80000005
+tbServices8P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear9P_Click()
+
+tbVolume9P.BackColor = &HC0C0FF
+tbFCA9P.BackColor = &HC0C0FF
+tbAdder9P.BackColor = &HC0C0FF
+tbFrUnit9P.BackColor = &HC0C0FF
+tbDuty9P.BackColor = &HC0C0FF
+tbRebate9P.BackColor = &HC0C0FF
+tbCost9P.BackColor = &HC0C0FF
+tbServices9P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume9P.Value = ""
+tbFCA9P.Value = ""
+tbAdder9P.Value = ""
+tbFrUnit9P.Value = ""
+tbDuty9P.Value = ""
+tbRebate9P.Value = ""
+tbCost9P.Value = ""
+tbServices9P.Value = ""
+
+tbVolume9P.BackColor = &H80000005
+tbFCA9P.BackColor = &H80000005
+tbAdder9P.BackColor = &H80000005
+tbFrUnit9P.BackColor = &H80000005
+tbDuty9P.BackColor = &H80000005
+tbRebate9P.BackColor = &H80000005
+tbCost9P.BackColor = &H80000005
+tbServices9P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume9P.BackColor = &H80000005
+tbFCA9P.BackColor = &H80000005
+tbAdder9P.BackColor = &H80000005
+tbFrUnit9P.BackColor = &H80000005
+tbDuty9P.BackColor = &H80000005
+tbRebate9P.BackColor = &H80000005
+tbCost9P.BackColor = &H80000005
+tbServices9P.BackColor = &H80000005
+
+End Select
+End Sub
+
+Private Sub cbClear10P_Click()
+
+tbVolume10P.BackColor = &HC0C0FF
+tbFCA10P.BackColor = &HC0C0FF
+tbAdder10P.BackColor = &HC0C0FF
+tbFrUnit10P.BackColor = &HC0C0FF
+tbDuty10P.BackColor = &HC0C0FF
+tbRebate10P.BackColor = &HC0C0FF
+tbCost10P.BackColor = &HC0C0FF
+tbServices10P.BackColor = &HC0C0FF
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Line?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+tbVolume10P.Value = ""
+tbFCA10P.Value = ""
+tbAdder10P.Value = ""
+tbFrUnit10P.Value = ""
+tbDuty10P.Value = ""
+tbRebate10P.Value = ""
+tbCost10P.Value = ""
+tbServices10P.Value = ""
+
+tbVolume10P.BackColor = &H80000005
+tbFCA10P.BackColor = &H80000005
+tbAdder10P.BackColor = &H80000005
+tbFrUnit10P.BackColor = &H80000005
+tbDuty10P.BackColor = &H80000005
+tbRebate10P.BackColor = &H80000005
+tbCost10P.BackColor = &H80000005
+tbServices10P.BackColor = &H80000005
+
+Case vbNo
+
+tbVolume10P.BackColor = &H80000005
+tbFCA10P.BackColor = &H80000005
+tbAdder10P.BackColor = &H80000005
+tbFrUnit10P.BackColor = &H80000005
+tbDuty10P.BackColor = &H80000005
+tbRebate10P.BackColor = &H80000005
+tbCost10P.BackColor = &H80000005
+tbServices10P.BackColor = &H80000005
+
+End Select
+End Sub
+
+'Clearing the whole Form************************************************************************************************
+Private Sub cbClearAllA_Click()
+
+Dim iResponse As Integer
+iResponse = MsgBox("Are You Sure You Want To Clear Form?", vbYesNo + vbCritical + vbDefaultButton2, "WARNING")
+
+Select Case iResponse
+Case vbYes
+
+cbUOM1.Value = ""
+cbCurrency1.Value = ""
+cbFxRate1.Value = ""
+cbUOMCHF1.Value = ""
+
+cbRegion1C.Value = ""
+tbMaterial1C.Value = ""
+cbProdDesc1C.Value = ""
+cbIncoterm1C.Value = ""
+tbLocation1C.Value = ""
+tbVolume1C.Value = ""
+tbFCA1C.Value = ""
+tbAdder1C.Value = ""
+tbFrUnit1C.Value = ""
+tbDuty1C.Value = ""
+tbRebate1C.Value = ""
+tbCost1C.Value = ""
+tbServices1C.Value = ""
+
+cbRegion2C.Value = ""
+tbMaterial2C.Value = ""
+cbProdDesc2C.Value = ""
+cbIncoterm2C.Value = ""
+tbLocation2C.Value = ""
+tbVolume2C.Value = ""
+tbFCA2C.Value = ""
+tbAdder2C.Value = ""
+tbFrUnit2C.Value = ""
+tbDuty2C.Value = ""
+tbRebate2C.Value = ""
+tbCost2C.Value = ""
+tbServices2C.Value = ""
+
+cbRegion3C.Value = ""
+tbMaterial3C.Value = ""
+cbProdDesc3C.Value = ""
+cbIncoterm3C.Value = ""
+tbLocation3C.Value = ""
+tbVolume3C.Value = ""
+tbFCA3C.Value = ""
+tbAdder3C.Value = ""
+tbFrUnit3C.Value = ""
+tbDuty3C.Value = ""
+tbRebate3C.Value = ""
+tbCost3C.Value = ""
+tbServices3C.Value = ""
+
+cbRegion4C.Value = ""
+tbMaterial4C.Value = ""
+cbProdDesc4C.Value = ""
+cbIncoterm4C.Value = ""
+tbLocation4C.Value = ""
+tbVolume4C.Value = ""
+tbFCA4C.Value = ""
+tbAdder4C.Value = ""
+tbFrUnit4C.Value = ""
+tbDuty4C.Value = ""
+tbRebate4C.Value = ""
+tbCost4C.Value = ""
+tbServices4C.Value = ""
+
+cbRegion5C.Value = ""
+tbMaterial5C.Value = ""
+cbProdDesc5C.Value = ""
+cbIncoterm5C.Value = ""
+tbLocation5C.Value = ""
+tbVolume5C.Value = ""
+tbFCA5C.Value = ""
+tbAdder5C.Value = ""
+tbFrUnit5C.Value = ""
+tbDuty5C.Value = ""
+tbRebate5C.Value = ""
+tbCost5C.Value = ""
+tbServices5C.Value = ""
+
+cbRegion6C.Value = ""
+tbMaterial6C.Value = ""
+cbProdDesc6C.Value = ""
+cbIncoterm6C.Value = ""
+tbLocation6C.Value = ""
+tbVolume6C.Value = ""
+tbFCA6C.Value = ""
+tbAdder6C.Value = ""
+tbFrUnit6C.Value = ""
+tbDuty6C.Value = ""
+tbRebate6C.Value = ""
+tbCost6C.Value = ""
+tbServices6C.Value = ""
+
+cbRegion7C.Value = ""
+tbMaterial7C.Value = ""
+cbProdDesc7C.Value = ""
+cbIncoterm7C.Value = ""
+tbLocation7C.Value = ""
+tbVolume7C.Value = ""
+tbFCA7C.Value = ""
+tbAdder7C.Value = ""
+tbFrUnit7C.Value = ""
+tbDuty7C.Value = ""
+tbRebate7C.Value = ""
+tbCost7C.Value = ""
+tbServices7C.Value = ""
+
+cbRegion8C.Value = ""
+tbMaterial8C.Value = ""
+cbProdDesc8C.Value = ""
+cbIncoterm8C.Value = ""
+tbLocation8C.Value = ""
+tbVolume8C.Value = ""
+tbFCA8C.Value = ""
+tbAdder8C.Value = ""
+tbFrUnit8C.Value = ""
+tbDuty8C.Value = ""
+tbRebate8C.Value = ""
+tbCost8C.Value = ""
+tbServices8C.Value = ""
+
+cbRegion9C.Value = ""
+tbMaterial9C.Value = ""
+cbProdDesc9C.Value = ""
+cbIncoterm9C.Value = ""
+tbLocation9C.Value = ""
+tbVolume9C.Value = ""
+tbFCA9C.Value = ""
+tbAdder9C.Value = ""
+tbFrUnit9C.Value = ""
+tbDuty9C.Value = ""
+tbRebate9C.Value = ""
+tbCost9C.Value = ""
+tbServices9C.Value = ""
+
+cbRegion10C.Value = ""
+tbMaterial10C.Value = ""
+cbProdDesc10C.Value = ""
+cbIncoterm10C.Value = ""
+tbLocation10C.Value = ""
+tbVolume10C.Value = ""
+tbFCA10C.Value = ""
+tbAdder10C.Value = ""
+tbFrUnit10C.Value = ""
+tbDuty10C.Value = ""
+tbRebate10C.Value = ""
+tbCost10C.Value = ""
+tbServices10C.Value = ""
+
+tbVolume1P.Value = ""
+tbFCA1P.Value = ""
+tbAdder1P.Value = ""
+tbFrUnit1P.Value = ""
+tbDuty1P.Value = ""
+tbRebate1P.Value = ""
+tbCost1P.Value = ""
+tbServices1P.Value = ""
+
+tbVolume2P.Value = ""
+tbFCA2P.Value = ""
+tbAdder2P.Value = ""
+tbFrUnit2P.Value = ""
+tbDuty2P.Value = ""
+tbRebate2P.Value = ""
+tbCost2P.Value = ""
+tbServices2P.Value = ""
+
+tbVolume3P.Value = ""
+tbFCA3P.Value = ""
+tbAdder3P.Value = ""
+tbFrUnit3P.Value = ""
+tbDuty3P.Value = ""
+tbRebate3P.Value = ""
+tbCost3P.Value = ""
+tbServices3P.Value = ""
+
+tbVolume4P.Value = ""
+tbFCA4P.Value = ""
+tbAdder4P.Value = ""
+tbFrUnit4P.Value = ""
+tbDuty4P.Value = ""
+tbRebate4P.Value = ""
+tbCost4P.Value = ""
+tbServices4P.Value = ""
+
+tbVolume5P.Value = ""
+tbFCA5P.Value = ""
+tbAdder5P.Value = ""
+tbFrUnit5P.Value = ""
+tbDuty5P.Value = ""
+tbRebate5P.Value = ""
+tbCost5P.Value = ""
+tbServices5P.Value = ""
+
+tbVolume6P.Value = ""
+tbFCA6P.Value = ""
+tbAdder6P.Value = ""
+tbFrUnit6P.Value = ""
+tbDuty6P.Value = ""
+tbRebate6P.Value = ""
+tbCost6P.Value = ""
+tbServices6P.Value = ""
+
+tbVolume7P.Value = ""
+tbFCA7P.Value = ""
+tbAdder7P.Value = ""
+tbFrUnit7P.Value = ""
+tbDuty7P.Value = ""
+tbRebate7P.Value = ""
+tbCost7P.Value = ""
+tbServices7P.Value = ""
+
+tbVolume8P.Value = ""
+tbFCA8P.Value = ""
+tbAdder8P.Value = ""
+tbFrUnit8P.Value = ""
+tbDuty8P.Value = ""
+tbRebate8P.Value = ""
+tbCost8P.Value = ""
+tbServices8P.Value = ""
+
+tbVolume9P.Value = ""
+tbFCA9P.Value = ""
+tbAdder9P.Value = ""
+tbFrUnit9P.Value = ""
+tbDuty9P.Value = ""
+tbRebate9P.Value = ""
+tbCost9P.Value = ""
+tbServices9P.Value = ""
+
+tbVolume10P.Value = ""
+tbFCA10P.Value = ""
+tbAdder10P.Value = ""
+tbFrUnit10P.Value = ""
+tbDuty10P.Value = ""
+tbRebate10P.Value = ""
+tbCost10P.Value = ""
+tbServices10P.Value = ""
+
+Case vbNo
+
+End Select
+
+End Sub
+
+
+'Export sheets to PDF**************************************************************************************************
+Private Sub cbExport1_Click()
+
+Dim iResponse As String
+
+iResponse = InputBox("Name Your File Before Pressing OK", "Save Your PC2 Calculations")
+
+If iResponse = Empty Then Exit Sub
+
+Dim diaFolder As FileDialog
+
+Set diaFolder = Application.FileDialog(msoFileDialogFolderPicker)
+diaFolder.AllowMultiSelect = False
+diaFolder.Show
+
+
+Dim dir As String
+dir = diaFolder.SelectedItems(1)
+
+Sheets(Array(2, 3)).Select
+
+ActiveSheet.ExportAsFixedFormat Type:=xlTypePDF, Filename:=dir & "\" & iResponse, IncludeDocProperties:=True, IgnorePrintAreas:=False, OpenAfterPublish:=False
+
+MsgBox ("Export Successful!")
+
+Sheet1.Select
+
+Unload Me
+
+End Sub
+
+
+'copy incoterm values to textboxes**************************************************************************************
+Private Sub cbIncoterm1C_Change()
+Me.tbIncoterm1P = Me.cbIncoterm1C
+End Sub
+
+Private Sub cbIncoterm2C_Change()
+Me.tbIncoterm2P = Me.cbIncoterm2C
+End Sub
+
+Private Sub cbIncoterm3C_Change()
+Me.tbIncoterm3P = Me.cbIncoterm3C
+End Sub
+
+Private Sub cbIncoterm4C_Change()
+Me.tbIncoterm4P = Me.cbIncoterm4C
+End Sub
+
+Private Sub cbIncoterm5C_Change()
+Me.tbIncoterm5P = Me.cbIncoterm5C
+End Sub
+Private Sub cbIncoterm6C_Change()
+Me.tbIncoterm6P = Me.cbIncoterm6C
+End Sub
+
+Private Sub cbIncoterm7C_Change()
+Me.tbIncoterm7P = Me.cbIncoterm7C
+End Sub
+
+Private Sub cbIncoterm8C_Change()
+Me.tbIncoterm8P = Me.cbIncoterm8C
+End Sub
+
+Private Sub cbIncoterm9C_Change()
+Me.tbIncoterm9P = Me.cbIncoterm9C
+End Sub
+
+Private Sub cbIncoterm10C_Change()
+Me.tbIncoterm10P = Me.cbIncoterm10C
+End Sub
+
+
+
+'Copy region values to textboxes****************************************************************************************
+Private Sub cbRegion1C_Change()
+Me.tbRegion1P = Me.cbRegion1C
+End Sub
+
+Private Sub cbRegion2C_Change()
+Me.tbRegion2P = Me.cbRegion2C
+End Sub
+
+Private Sub cbRegion3C_Change()
+Me.tbRegion3P = Me.cbRegion3C
+End Sub
+
+Private Sub cbRegion4C_Change()
+Me.tbRegion4P = Me.cbRegion4C
+End Sub
+
+Private Sub cbRegion5C_Change()
+Me.tbRegion5P = Me.cbRegion5C
+End Sub
+
+Private Sub cbRegion6C_Change()
+Me.tbRegion6P = Me.cbRegion6C
+End Sub
+
+Private Sub cbRegion7C_Change()
+Me.tbRegion7P = Me.cbRegion7C
+End Sub
+
+Private Sub cbRegion8C_Change()
+Me.tbRegion8P = Me.cbRegion8C
+End Sub
+
+Private Sub cbRegion9C_Change()
+Me.tbRegion9P = Me.cbRegion9C
+End Sub
+
+Private Sub cbRegion10C_Change()
+Me.tbRegion10P = Me.cbRegion10C
+End Sub
+
+
+'Freight Adder = Freight/Unit*********************************************************************************************
+Private Sub tbAdder1C_Change()
+Me.tbFrUnit1C = Me.tbAdder1C
+End Sub
+
+Private Sub tbAdder2C_Change()
+Me.tbFrUnit2C = Me.tbAdder2C
+End Sub
+
+Private Sub tbAdder3C_Change()
+Me.tbFrUnit3C = Me.tbAdder3C
+End Sub
+
+Private Sub tbAdder4C_Change()
+Me.tbFrUnit4C = Me.tbAdder4C
+End Sub
+
+Private Sub tbAdder5C_Change()
+Me.tbFrUnit5C = Me.tbAdder5C
+End Sub
+
+Private Sub tbAdder6C_Change()
+Me.tbFrUnit6C = Me.tbAdder6C
+End Sub
+
+Private Sub tbAdder7C_Change()
+Me.tbFrUnit7C = Me.tbAdder7C
+End Sub
+
+Private Sub tbAdder8C_Change()
+Me.tbFrUnit8C = Me.tbAdder8C
+End Sub
+
+Private Sub tbAdder9C_Change()
+Me.tbFrUnit9C = Me.tbAdder9C
+End Sub
+
+Private Sub tbAdder10C_Change()
+Me.tbFrUnit10C = Me.tbAdder10C
+End Sub
+
+Private Sub tbAdder1P_Change()
+Me.tbFrUnit1P = Me.tbAdder1P
+End Sub
+
+Private Sub tbAdder2P_Change()
+Me.tbFrUnit2P = Me.tbAdder2P
+End Sub
+
+Private Sub tbAdder3P_Change()
+Me.tbFrUnit3P = Me.tbAdder3P
+End Sub
+
+Private Sub tbAdder4P_Change()
+Me.tbFrUnit4P = Me.tbAdder4P
+End Sub
+
+Private Sub tbAdder5P_Change()
+Me.tbFrUnit5P = Me.tbAdder5P
+End Sub
+
+Private Sub tbAdder6P_Change()
+Me.tbFrUnit6P = Me.tbAdder6P
+End Sub
+
+Private Sub tbAdder7P_Change()
+Me.tbFrUnit7P = Me.tbAdder7P
+End Sub
+
+Private Sub tbAdder8P_Change()
+Me.tbFrUnit8P = Me.tbAdder8P
+End Sub
+
+Private Sub tbAdder9P_Change()
+Me.tbFrUnit9P = Me.tbAdder9P
+End Sub
+
+Private Sub tbAdder10P_Change()
+Me.tbFrUnit10P = Me.tbAdder10P
+End Sub
+
+
+'Close the Entry Form*****************************************************************************************************
+'Private Sub cmdClose_Click()
+'Unload Me
+'End Sub
+
+
+'Laptop view**************************************************************************************************************
+Private Sub CommandButton55_Click()
+UserForm1.Zoom = 80
+End Sub
+
+Private Sub CommandButton58_Click()
+UserForm1.Zoom = 80
+End Sub
+
+'Desktop view*************************************************************************************************************
+Private Sub CommandButton56_Click()
+UserForm1.Zoom = 105
+End Sub
+
+Private Sub CommandButton57_Click()
+UserForm1.Zoom = 105
+End Sub
+
+'Copy Material No. to textboxes*******************************************************************************************
+Private Sub tbMaterial1C_Change()
+Me.tbMaterial1P = Me.tbMaterial1C
+End Sub
+
+Private Sub tbMaterial2C_Change()
+Me.tbMaterial2P = Me.tbMaterial2C
+End Sub
+
+Private Sub tbMaterial3C_Change()
+Me.tbMaterial3P = Me.tbMaterial3C
+End Sub
+
+Private Sub tbMaterial4C_Change()
+Me.tbMaterial4P = Me.tbMaterial4C
+End Sub
+
+Private Sub tbMaterial5C_Change()
+Me.tbMaterial5P = Me.tbMaterial5C
+End Sub
+
+Private Sub tbMaterial6C_Change()
+Me.tbMaterial6P = Me.tbMaterial6C
+End Sub
+
+Private Sub tbMaterial7C_Change()
+Me.tbMaterial7P = Me.tbMaterial7C
+End Sub
+
+Private Sub tbMaterial8C_Change()
+Me.tbMaterial8P = Me.tbMaterial8C
+End Sub
+
+Private Sub tbMaterial9C_Change()
+Me.tbMaterial9P = Me.tbMaterial9C
+End Sub
+
+Private Sub tbMaterial10C_Change()
+Me.tbMaterial10P = Me.tbMaterial10C
+End Sub
+
+'Copy Prod Description to textboxes**************************************************************************************
+Private Sub cbProdDesc1C_Change()
+
+Me.tbProdDesc1P = Me.cbProdDesc1C
+End Sub
+
+Private Sub cbProdDesc2C_Change()
+Me.tbProdDesc2P = Me.cbProdDesc2C
+End Sub
+
+Private Sub cbProdDesc3C_Change()
+Me.tbProdDesc3P = Me.cbProdDesc3C
+End Sub
+
+Private Sub cbProdDesc4C_Change()
+Me.tbProdDesc4P = Me.cbProdDesc4C
+End Sub
+
+Private Sub cbProdDesc5C_Change()
+Me.tbProdDesc5P = Me.cbProdDesc5C
+End Sub
+
+Private Sub cbProdDesc6C_Change()
+Me.tbProdDesc6P = Me.cbProdDesc6C
+End Sub
+
+Private Sub cbProdDesc7C_Change()
+Me.tbProdDesc7P = Me.cbProdDesc7C
+End Sub
+
+Private Sub cbProdDesc8C_Change()
+Me.tbProdDesc8P = Me.cbProdDesc8C
+End Sub
+
+Private Sub cbProdDesc9C_Change()
+Me.tbProdDesc9P = Me.cbProdDesc9C
+End Sub
+
+Private Sub cbProdDesc10C_Change()
+Me.tbProdDesc10P = Me.cbProdDesc10C
+End Sub
+
+'Copy Locations to textboxes************************************************************************************************
+Private Sub tbLocation1C_Change()
+Me.tbLocation1P = Me.tbLocation1C
+End Sub
+
+Private Sub tbLocation2C_Change()
+Me.tbLocation2P = Me.tbLocation2C
+End Sub
+
+Private Sub tbLocation3C_Change()
+Me.tbLocation3P = Me.tbLocation3C
+End Sub
+
+Private Sub tbLocation4C_Change()
+Me.tbLocation4P = Me.tbLocation4C
+End Sub
+
+Private Sub tbLocation5C_Change()
+Me.tbLocation5P = Me.tbLocation5C
+End Sub
+
+Private Sub tbLocation6C_Change()
+Me.tbLocation6P = Me.tbLocation6C
+End Sub
+
+Private Sub tbLocation7C_Change()
+Me.tbLocation7P = Me.tbLocation7C
+End Sub
+
+Private Sub tbLocation8C_Change()
+Me.tbLocation8P = Me.tbLocation8C
+End Sub
+
+Private Sub tbLocation9C_Change()
+Me.tbLocation9P = Me.tbLocation9C
+End Sub
+
+Private Sub tbLocation10C_Change()
+Me.tbLocation10P = Me.tbLocation10C
+End Sub
+
+'Autopopulate Material Number********************************************************************************************
+Private Sub cbProdDesc1C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc1C) = 0 Then
+Me.tbMaterial1C.Value = ""
+Me.tbMaterial1C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc1C.Value = "" Then
+Me.tbMaterial1C.Value = ""
+Me.tbMaterial1C.ControlTipText = ""
+
+Else
+Me.tbMaterial1C = Application.WorksheetFunction.VLookup(Me.cbProdDesc1C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial1C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc2C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc2C) = 0 Then
+Me.tbMaterial2C.Value = ""
+Me.tbMaterial2C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc2C.Value = "" Then
+Me.tbMaterial2C.Value = ""
+Me.tbMaterial2C.ControlTipText = ""
+
+Else
+Me.tbMaterial2C = Application.WorksheetFunction.VLookup(Me.cbProdDesc2C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial2C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc3C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc3C) = 0 Then
+Me.tbMaterial3C.Value = ""
+Me.tbMaterial3C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc3C.Value = "" Then
+Me.tbMaterial3C.Value = ""
+Me.tbMaterial3C.ControlTipText = ""
+
+Else
+Me.tbMaterial3C = Application.WorksheetFunction.VLookup(Me.cbProdDesc3C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial3C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc4C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc4C) = 0 Then
+Me.tbMaterial4C.Value = ""
+Me.tbMaterial4C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc4C.Value = "" Then
+Me.tbMaterial4C.Value = ""
+Me.tbMaterial4C.ControlTipText = ""
+
+Else
+Me.tbMaterial4C = Application.WorksheetFunction.VLookup(Me.cbProdDesc4C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial4C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc5C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc5C) = 0 Then
+Me.tbMaterial5C.Value = ""
+Me.tbMaterial5C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc5C.Value = "" Then
+Me.tbMaterial5C.Value = ""
+Me.tbMaterial5C.ControlTipText = ""
+
+Else
+Me.tbMaterial5C = Application.WorksheetFunction.VLookup(Me.cbProdDesc5C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial5C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc6C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc6C) = 0 Then
+Me.tbMaterial6C.Value = ""
+Me.tbMaterial6C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc6C.Value = "" Then
+Me.tbMaterial6C.Value = ""
+Me.tbMaterial6C.ControlTipText = ""
+
+Else
+Me.tbMaterial6C = Application.WorksheetFunction.VLookup(Me.cbProdDesc6C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial6C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc7C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc7C) = 0 Then
+Me.tbMaterial7C.Value = ""
+Me.tbMaterial7C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc7C.Value = "" Then
+Me.tbMaterial7C.Value = ""
+Me.tbMaterial7C.ControlTipText = ""
+
+Else
+Me.tbMaterial7C = Application.WorksheetFunction.VLookup(Me.cbProdDesc7C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial7C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc8C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc8C) = 0 Then
+Me.tbMaterial8C.Value = ""
+Me.tbMaterial8C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc8C.Value = "" Then
+Me.tbMaterial8C.Value = ""
+Me.tbMaterial8C.ControlTipText = ""
+
+Else
+Me.tbMaterial8C = Application.WorksheetFunction.VLookup(Me.cbProdDesc8C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial8C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc9C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc9C) = 0 Then
+Me.tbMaterial9C.Value = ""
+Me.tbMaterial9C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc9C.Value = "" Then
+Me.tbMaterial9C.Value = ""
+Me.tbMaterial9C.ControlTipText = ""
+
+Else
+Me.tbMaterial9C = Application.WorksheetFunction.VLookup(Me.cbProdDesc9C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial9C.ControlTipText = ""
+End If
+
+End Sub
+
+Private Sub cbProdDesc10C_AfterUpdate()
+
+If WorksheetFunction.CountIf(Sheet7.Range("B:B"), Me.cbProdDesc10C) = 0 Then
+Me.tbMaterial10C.Value = ""
+Me.tbMaterial10C.ControlTipText = "Material Number was not found. Type Number Manually"
+
+ElseIf Me.cbProdDesc10C.Value = "" Then
+Me.tbMaterial10C.Value = ""
+Me.tbMaterial10C.ControlTipText = ""
+
+Else
+Me.tbMaterial10C = Application.WorksheetFunction.VLookup(Me.cbProdDesc10C, Sheet6.Range("A:B"), 2, 0)
+Me.tbMaterial10C.ControlTipText = ""
+End If
+
+End Sub
+
+
+'Autopopulate Product Description****************************************************************************************
+
+Private Sub tbMaterial1C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial1C) = 0 Then
+Me.cbProdDesc1C.Value = ""
+Me.cbProdDesc1C.ControlTipText = Me.tbMaterial1C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial1C.Value = "" Then
+Me.cbProdDesc1C.Value = ""
+Me.cbProdDesc1C.ControlTipText = ""
+Else
+Me.cbProdDesc1C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial1C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc1C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial2C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial2C) = 0 Then
+Me.cbProdDesc2C.Value = ""
+Me.cbProdDesc2C.ControlTipText = Me.tbMaterial2C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial2C.Value = "" Then
+Me.cbProdDesc2C.Value = ""
+Me.cbProdDesc2C.ControlTipText = ""
+Else
+Me.cbProdDesc2C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial2C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc2C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial3C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial3C) = 0 Then
+Me.cbProdDesc3C.Value = ""
+Me.cbProdDesc3C.ControlTipText = Me.tbMaterial3C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial3C.Value = "" Then
+Me.cbProdDesc3C.Value = ""
+Me.cbProdDesc3C.ControlTipText = ""
+Else
+Me.cbProdDesc3C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial3C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc3C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial4C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial4C) = 0 Then
+Me.cbProdDesc4C.Value = ""
+Me.cbProdDesc4C.ControlTipText = Me.tbMaterial4C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial4C.Value = "" Then
+Me.cbProdDesc4C.Value = ""
+Me.cbProdDesc4C.ControlTipText = ""
+Else
+Me.cbProdDesc4C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial4C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc4C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial5C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial5C) = 0 Then
+Me.cbProdDesc5C.Value = ""
+Me.cbProdDesc5C.ControlTipText = Me.tbMaterial5C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial5C.Value = "" Then
+Me.cbProdDesc5C.Value = ""
+Me.cbProdDesc5C.ControlTipText = ""
+Else
+Me.cbProdDesc5C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial5C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc5C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial6C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial6C) = 0 Then
+Me.cbProdDesc6C.Value = ""
+Me.cbProdDesc6C.ControlTipText = Me.tbMaterial6C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial6C.Value = "" Then
+Me.cbProdDesc6C.Value = ""
+Me.cbProdDesc6C.ControlTipText = ""
+Else
+Me.cbProdDesc6C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial6C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc6C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial7C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial7C) = 0 Then
+Me.cbProdDesc7C.Value = ""
+Me.cbProdDesc7C.ControlTipText = Me.tbMaterial7C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial7C.Value = "" Then
+Me.cbProdDesc7C.Value = ""
+Me.cbProdDesc7C.ControlTipText = ""
+Else
+Me.cbProdDesc7C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial7C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc7C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial8C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial8C) = 0 Then
+Me.cbProdDesc8C.Value = ""
+Me.cbProdDesc8C.ControlTipText = Me.tbMaterial8C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial8C.Value = "" Then
+Me.cbProdDesc8C.Value = ""
+Me.cbProdDesc8C.ControlTipText = ""
+Else
+Me.cbProdDesc8C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial8C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc8C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial9C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial9C) = 0 Then
+Me.cbProdDesc9C.Value = ""
+Me.cbProdDesc9C.ControlTipText = Me.tbMaterial9C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial9C.Value = "" Then
+Me.cbProdDesc9C.Value = ""
+Me.cbProdDesc9C.ControlTipText = ""
+Else
+Me.cbProdDesc9C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial9C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc9C.ControlTipText = ""
+End If
+
+
+End Sub
+
+Private Sub tbMaterial10C_AfterUpdate()
+
+
+If WorksheetFunction.CountIf(Sheet6.Range("B:B"), Me.tbMaterial10C) = 0 Then
+Me.cbProdDesc10C.Value = ""
+Me.cbProdDesc10C.ControlTipText = Me.tbMaterial10C & " was not found. Type Description Manually"
+
+ElseIf Me.tbMaterial10C.Value = "" Then
+Me.cbProdDesc10C.Value = ""
+Me.cbProdDesc10C.ControlTipText = ""
+Else
+Me.cbProdDesc10C = Application.WorksheetFunction.VLookup(CLng(Me.tbMaterial10C), Sheet6.Range("B:D"), 3, 0)
+Me.cbProdDesc10C.ControlTipText = ""
+End If
+
+
+End Sub
+
+'Allow only numerical values for material no.*****************************************************************************
+Private Sub tbMaterial1C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+
+Private Sub tbMaterial2C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial3C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial4C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial5C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial6C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial7C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial8C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial9C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial10C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+
+Private Sub tbMaterial1P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial2P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial3P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial4P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial5P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial6P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial7P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial8P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial9P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbMaterial10P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+
+'Allow numerical values for Volume*****************************************************************************************
+Private Sub tbVolume1C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume2C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume3C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume4C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume5C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume6C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume7C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume8C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume9C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume10C_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume1P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume2P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume3P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume4P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume5P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume6P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume7P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume8P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume9P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+Private Sub tbVolume10P_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
+If (KeyAscii > 47 And KeyAscii < 58) Then
+KeyAscii = KeyAscii
+Else
+KeyAscii = 0
+MsgBox "Numerical Values Only"
+End If
+End Sub
+
+
+
+
+'Autofit userform screen to window****************************************************************************************
+Private Sub UserForm_Activate()
+Application.WindowState = xlMaximized
+Me.Height = Application.Height
+Me.Width = Application.Width
+'Me.MultiPage1.Height = Application.Height
+'Me.MultiPage1.Width = Application.Width
+
+End Sub
+
+
+'Turning off the x button in Userform************************************************************************************
+Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
+If CloseMode = vbFormControlMenu Then
+Cancel = True
+End If
+End Sub
